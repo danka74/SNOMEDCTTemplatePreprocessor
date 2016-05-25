@@ -75,8 +75,7 @@ public class SNOMEDCTTemplatePreprocessor {
 
 			StringReader reader = new StringReader(example);
 
-			System.out.print(example);
-			System.out.print(" - ");
+			System.out.println("INPUT: " + example);
 
 			try {
 				// create stack of StringBuilder for the different scope blocks
@@ -176,6 +175,7 @@ public class SNOMEDCTTemplatePreprocessor {
 
 							// check value(s) against constraints
 							// TODO: stub
+							// TODO: add meaning constraints
 							if (noOfValues < min || noOfValues > max)
 								throw new Exception(
 										"Cardinality constraint broken: "
@@ -224,10 +224,11 @@ public class SNOMEDCTTemplatePreprocessor {
 					character = reader.read();
 				}
 
-				System.out.println(scopeBlockTextStack.peek().toString());
+				System.out.println("OUTPUT: " + scopeBlockTextStack.peek().toString());
 			} catch (Exception e) {
-				System.out.println(e.toString());
+				System.out.println("ERROR: " + e.toString());
 			}
+			System.out.println();
 		}
 	}
 
