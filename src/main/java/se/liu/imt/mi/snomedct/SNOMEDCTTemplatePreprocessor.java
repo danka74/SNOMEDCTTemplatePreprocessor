@@ -163,8 +163,12 @@ public class SNOMEDCTTemplatePreprocessor {
 							if (cardinality != null) {
 								min = Integer.parseInt(cardinality.getChild(1)
 										.getText()); // min is child no. 1
-								max = Integer.parseInt(cardinality.getChild(3)
-										.getText()); // max is child no. 3
+								if (!cardinality.getChild(3).getText()
+										.equals("*"))
+									max = Integer.parseInt(cardinality
+											.getChild(3).getText()); // max is
+																		// child
+																		// no. 3
 							}
 
 							// look up value(s) of variables/paths
@@ -224,7 +228,11 @@ public class SNOMEDCTTemplatePreprocessor {
 					character = reader.read();
 				}
 
-				System.out.println("OUTPUT: " + scopeBlockTextStack.peek().toString());
+				if (level != 0)
+					throw new Exception("Scope end tag missing");
+
+				System.out.println("OUTPUT: "
+						+ scopeBlockTextStack.peek().toString());
 			} catch (Exception e) {
 				System.out.println("ERROR: " + e.toString());
 			}
