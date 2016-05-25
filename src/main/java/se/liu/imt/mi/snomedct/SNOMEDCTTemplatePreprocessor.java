@@ -15,12 +15,15 @@ import java.util.LinkedList;
 import java.util.Scanner;
 
 import org.antlr.v4.runtime.ANTLRInputStream;
+import org.antlr.v4.runtime.BailErrorStrategy;
 import org.antlr.v4.runtime.CommonTokenStream;
+import org.antlr.v4.runtime.misc.ParseCancellationException;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
 import se.liu.imt.mi.snomedct.expression.SlotLexer;
 import se.liu.imt.mi.snomedct.expression.SlotParser;
+import se.liu.imt.mi.snomedct.expression.SlotParser.CardinalityContext;
 import se.liu.imt.mi.snomedct.expression.SlotParser.SlotContext;
 import se.liu.imt.mi.snomedct.expression.SlotParser.VariableContext;
 import se.liu.imt.mi.snomedct.expression.SlotParserBaseVisitor;
@@ -46,13 +49,19 @@ public class SNOMEDCTTemplatePreprocessor {
 
 		List<HashMap<String, String>> variableLUT = new LinkedList<HashMap<String, String>>();
 
-		HashMap set1 = new HashMap();
+		HashMap<String, String> set1 = new HashMap<String, String>();
 		set1.put("variable1", "658778|concept2|");
 		set1.put("variable2", "84758475|concept3|");
 		variableLUT.add(set1);
 
 		Reader reader = new StringReader(
-				"123567|concept1|:#< 847857|attribute1|= [[ @variable1 ]]#<, 823781|attribute2|= [[ @variable2 ]]#>#>");
+				"123567|concept1|#<:{ 847857|attribute1|= [[ @variableX ]]#<, 823781|attribute2|= [[ [1..1] @variable2 ]] #>}#>"); // there is no variableX
+
+		// Reader reader = new StringReader(
+		// "123567|concept1|:#<#<{ 847857|attribute1|= [[ @variable1 ]], 823781|attribute2|= [[ @variable2 ]]#>}#>");
+		//
+		// Reader reader = new StringReader(
+		// "123567|concept1|:#<{ 847857|attribute1|= [[ @variable1 ]]#<, 823781|attribute2|= [[ @variable2 ]]#>}#>");
 
 		Writer writer = new StringWriter();
 
@@ -63,7 +72,7 @@ public class SNOMEDCTTemplatePreprocessor {
 		// push a new StringBuilder for the outermost block
 		scopeBlockTextStack.push(new StringBuilder());
 
-		int level = 0;
+		int level = 0; // keep track of level, for debugging mostly...
 		int character = reader.read();
 		while (true) {
 			if (character == -1)
@@ -78,36 +87,89 @@ public class SNOMEDCTTemplatePreprocessor {
 					if (scopeBlockTextStack.size() == 1)
 						throw new Exception(
 								"Scope block end without preceding start");
-					level--;
-					// pop the current StringBuilder and append it to the next
-					// StringBuilder down the stack
+					// pop the StringBuilder corresponding to the scope that
+					// just ended
 					StringBuilder sb = scopeBlockTextStack.pop();
-
+					// get string including everything between but not including
+					// scope markers
 					String scopeString = sb.toString();
 
+					// parse the string contents of the scope
 					ANTLRInputStream is = new ANTLRInputStream(scopeString);
 					SlotLexer lexer = new SlotLexer(is);
 					CommonTokenStream tokens = new CommonTokenStream(lexer);
 					SlotParser parser = new SlotParser(tokens);
-
-					ParseTree tree = parser.scope();
-					
-					for(int i = tree.getChildCount() - 1; i >= 0; i--) {
-						if(tree.getChild(i).getClass() == SlotContext.class) {
-							SlotContext slot = (SlotContext)tree.getChild(i);
-							VariableContext variable = slot.getChild(VariableContext.class, 0);
-							String s = variable.getText();
-						}
+					parser.setErrorHandler(new BailErrorStrategy());
+					// the parse tree should contain 1..* slots ([[ ... ]])
+					// possibly surrounded by arbitrary character content
+					ParseTree tree = null;
+					try {
+						tree = parser.scope();
+					} catch (ParseCancellationException pce) {
+						throw new Exception(pce);
 					}
 
-					// find relevant slot, extract variable name/slot path (+ constraints)
-					
+					// get the slot corresponding to the current scope by
+					// selecting the last slot occurring within the scope
+					SlotContext slot = null;
+					if (tree.getChildCount() > 0)
+						for (int i = tree.getChildCount() - 1; i >= 0; i--) {
+							if (tree.getChild(i).getClass() == SlotContext.class) {
+								slot = (SlotContext) tree.getChild(i);
+								break;
+							}
+						}
+					if (slot == null)
+						throw new Exception("No slot in the scope");
+
+					// extract variable name/slot path
+					VariableContext variable = slot.getChild(
+							VariableContext.class, 0);
+					String variableName = variable.getText().substring(1);
+
+					// PathContext path = slot.getChild(VariableContext.class,
+					// 0);
+
+					CardinalityContext cardinality = slot.getChild(
+							CardinalityContext.class, 0);
+					int min = 0;
+					int max = Integer.MAX_VALUE;
+					if (cardinality != null) {
+						min = Integer.parseInt(cardinality.getChild(1)
+								.getText()); // min is child no. 1
+						max = Integer.parseInt(cardinality.getChild(3)
+								.getText()); // max is child no. 3
+					}
+
 					// look up value(s) of variables/paths
-					
+					// TODO: stub
+					String value = set1.get(variableName);
+
+					int noOfValues = 1;
+
 					// check value(s) against constraints
-					
-					// for each value, output everything but the current slot which is replace by value  
-					
+					// TODO: stub
+					if (noOfValues < min || noOfValues > max)
+						throw new Exception("Cardinality constraint broken");
+
+					// for each value, output everything but the current slot
+					// which is replace by value
+					if (value != null)
+						for (int i = 0; i < noOfValues; i++) {
+							for (int j = 0; j < tree.getChildCount(); j++) {
+								if (tree.getChild(j).getClass() != SlotContext.class)
+									scopeBlockTextStack.peek().append(
+											tree.getChild(j).getText());
+								else {
+									scopeBlockTextStack.peek().append(value);
+								}
+							}
+						}
+
+					level--;
+
+					break;
+
 				} else
 				// identify scope start '#<'
 				if (character == '<') {

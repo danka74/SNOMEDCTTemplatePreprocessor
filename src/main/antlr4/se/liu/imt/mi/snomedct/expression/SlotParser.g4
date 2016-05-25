@@ -6,6 +6,6 @@ scope: TEXT? (slot TEXT?)+;
 
 slot: SLOT_START cardinality? variable? SLOT_END;
 
-variable: AT ID;
+variable: VARIABLE;
 
-cardinality: CARDINALITY;
+cardinality: LBRACKET NUM DOTDOT (NUM | STAR) RBRACKET;
