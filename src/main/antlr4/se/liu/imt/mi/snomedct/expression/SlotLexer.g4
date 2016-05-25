@@ -1,7 +1,7 @@
 lexer grammar SlotLexer;
 
 SLOT_START: '[[' -> mode(ISLAND);
-TEXT: ~[\[]*;
+TEXT: ~[\[]+;
 
 mode ISLAND;
 SLOT_END: ']]' -> mode(DEFAULT_MODE);

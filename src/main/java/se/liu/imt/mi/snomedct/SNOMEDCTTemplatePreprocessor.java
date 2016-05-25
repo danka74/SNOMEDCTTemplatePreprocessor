@@ -17,9 +17,12 @@ import java.util.Scanner;
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
+import org.antlr.v4.runtime.tree.TerminalNode;
 
 import se.liu.imt.mi.snomedct.expression.SlotLexer;
 import se.liu.imt.mi.snomedct.expression.SlotParser;
+import se.liu.imt.mi.snomedct.expression.SlotParser.SlotContext;
+import se.liu.imt.mi.snomedct.expression.SlotParser.VariableContext;
 import se.liu.imt.mi.snomedct.expression.SlotParserBaseVisitor;
 
 /**
@@ -49,7 +52,7 @@ public class SNOMEDCTTemplatePreprocessor {
 		variableLUT.add(set1);
 
 		Reader reader = new StringReader(
-				"123567|concept1|:#<#< 847857|attribute1|= [[ @variable1 ]], 823781|attribute2|= [[ @variable2 ]]#>#>");
+				"123567|concept1|:#< 847857|attribute1|= [[ @variable1 ]]#<, 823781|attribute2|= [[ @variable2 ]]#>#>");
 
 		Writer writer = new StringWriter();
 
@@ -67,7 +70,7 @@ public class SNOMEDCTTemplatePreprocessor {
 				break;
 
 			switch (character) {
-			case '#': 
+			case '#':
 				// identify end of scope block '#>'
 				character = reader.read(); // look at next character
 				int prevCharacter = character;
@@ -79,35 +82,46 @@ public class SNOMEDCTTemplatePreprocessor {
 					// pop the current StringBuilder and append it to the next
 					// StringBuilder down the stack
 					StringBuilder sb = scopeBlockTextStack.pop();
-					
+
 					String scopeString = sb.toString();
-					
+
 					ANTLRInputStream is = new ANTLRInputStream(scopeString);
 					SlotLexer lexer = new SlotLexer(is);
 					CommonTokenStream tokens = new CommonTokenStream(lexer);
 					SlotParser parser = new SlotParser(tokens);
+
+					ParseTree tree = parser.scope();
 					
-					ParseTree tree = parser.file();
+					for(int i = tree.getChildCount() - 1; i >= 0; i--) {
+						if(tree.getChild(i).getClass() == SlotContext.class) {
+							SlotContext slot = (SlotContext)tree.getChild(i);
+							VariableContext variable = slot.getChild(VariableContext.class, 0);
+							String s = variable.getText();
+						}
+					}
+
+					// find relevant slot, extract variable name/slot path (+ constraints)
 					
-					SlotParserBaseVisitor<String> visitor = new SlotParserBaseVisitor<String>();
-					visitor.visit(tree);
+					// look up value(s) of variables/paths
 					
-					scopeBlockTextStack.peek().append(sb);
-					break;
-				} else 
-					// identify scope start '#<'
-					if (character == '<') {
+					// check value(s) against constraints
+					
+					// for each value, output everything but the current slot which is replace by value  
+					
+				} else
+				// identify scope start '#<'
+				if (character == '<') {
 					// push a new Stringbuilder for the new scope block
 					level++;
 					scopeBlockTextStack.push(new StringBuilder());
 					break;
 				}
 				// write the consumed character and continue
-				scopeBlockTextStack.peek().append((char)prevCharacter);
+				scopeBlockTextStack.peek().append((char) prevCharacter);
 				continue;
 			default:
 				// append the read character to the current StringBuilder
-				scopeBlockTextStack.peek().append((char)character);
+				scopeBlockTextStack.peek().append((char) character);
 			}
 
 			character = reader.read();
