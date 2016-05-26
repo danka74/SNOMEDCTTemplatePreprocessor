@@ -58,7 +58,7 @@ public class SNOMEDCTTemplatePreprocessor {
 				"123567|concept1|#<:{ 847857|attribute1|= [[ @variableX ]]#<, 823781|attribute2|= [[ [1..1] @variable2 ]] #>}#>", // variableX
 																																	// not
 																																	// present
-				"123567|concept1|:#<#<{ 847857|attribute1|= [[ @variable1 ]], 823781|attribute2|= [[ @variable2 ]]#>}#>",
+				"123567|concept1|:#<#<{ 847857|attribute1|= [[ @variable1 ]], 823781|attribute2|= [[ @variable2 ]]}#>#>",
 				"123567|concept1|:#<{ 847857|attribute1|= [[ @variable1 ]]#<, 823781|attribute2|= [[ @variable2 ]]#>}#>",
 				"123567|concept1|:#<{ 847857|attribute1|= [[ @variable1 ]]#<, 823781|attribute2|= [[ [0..0] @variable2 ]]#>}#>", // wrong
 																																	// cardinality
@@ -192,14 +192,17 @@ public class SNOMEDCTTemplatePreprocessor {
 							if (value != null)
 								for (int i = 0; i < noOfValues; i++) {
 									for (int j = 0; j < tree.getChildCount(); j++) {
-										if (j != slotIndex) // tree.getChild(j).getClass()
-															// !=
-															// SlotContext.class)
-											scopeBlockTextStack.peek().append(
-													tree.getChild(j).getText());
-										else {
+										if (j == slotIndex) // this is the slot
+															// corresponding to
+															// this scope:
+															// replace the slot
+															// with the value
 											scopeBlockTextStack.peek().append(
 													value);
+										else {
+											// else append the original text
+											scopeBlockTextStack.peek().append(
+													tree.getChild(j).getText());
 										}
 									}
 								}
@@ -225,6 +228,7 @@ public class SNOMEDCTTemplatePreprocessor {
 						scopeBlockTextStack.peek().append((char) character);
 					}
 
+					// read next character
 					character = reader.read();
 				}
 
