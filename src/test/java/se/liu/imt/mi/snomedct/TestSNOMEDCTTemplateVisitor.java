@@ -5,6 +5,8 @@ package se.liu.imt.mi.snomedct;
 
 import static org.junit.Assert.*;
 
+import java.util.HashMap;
+
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.BailErrorStrategy;
 import org.antlr.v4.runtime.CommonTokenStream;
@@ -57,6 +59,11 @@ public class TestSNOMEDCTTemplateVisitor {
 
 	@Test
 	public void test() {
+		
+		HashMap<String, String> set1 = new HashMap<String, String>();
+		set1.put("findingWithExplicitContext", "658778|concept2|");
+		set1.put("associatedFinding", "84758475|concept3|");
+		
 		String testExpression = "[[ [1..1] @findingWithExplicitContext ]]:\n" + 
 				" { 246090004 |Associated finding| = ([[ [0..1] @associatedFinding ]]:\n" + 
 				"{ 246112005 |Severity| = [[ [0..1] @severity]],\n" + 
@@ -71,7 +78,7 @@ public class TestSNOMEDCTTemplateVisitor {
 		SNOMEDCTTemplateParser parser = new SNOMEDCTTemplateParser(tokens);
 		ParseTree tree = null;
 		tree = parser.expression();
-		SNOMEDCTTemplateVisitor visitor = new SNOMEDCTTemplateVisitor();
+		SNOMEDCTTemplateVisitor visitor = new SNOMEDCTTemplateVisitor(set1);
 		String result = visitor.visit(tree);
 		
 		System.out.println(result);
