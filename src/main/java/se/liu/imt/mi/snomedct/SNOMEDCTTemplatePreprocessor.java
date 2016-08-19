@@ -3,6 +3,10 @@
  */
 package se.liu.imt.mi.snomedct;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
@@ -41,41 +45,117 @@ public class SNOMEDCTTemplatePreprocessor {
 		// TODO Auto-generated constructor stub
 	}
 
+	public static List<HashMap<String, String>> readCSV(File input) {
+
+		List<HashMap<String, String>> table = new LinkedList<HashMap<String, String>>();
+
+		try {
+			BufferedReader inputReader = new BufferedReader(new FileReader(
+					input));
+
+			// read headers
+			String headers[] = inputReader.readLine().split("\t");
+
+			String line;
+			while ((line = inputReader.readLine()) != null) {
+				String[] items = line.split("\t");
+
+				HashMap<String, String> set = new HashMap<String, String>();
+				int length = items.length;
+				for (int i = 0; i < length; i++) {
+					if (!items[i].isEmpty())
+						set.put(headers[i], items[i]);
+				}
+
+				table.add(set);
+			}
+
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IndexOutOfBoundsException e) {
+			e.printStackTrace();
+		}
+
+		return table;
+
+	}
+
 	/**
 	 * @param args
 	 * @throws Exception
 	 */
 	public static void main(String[] args) throws Exception {
 
-		List<HashMap<String, String>> variableLUT = new LinkedList<HashMap<String, String>>();
+		List<HashMap<String, String>> data = readCSV(new File(
+				"src/test/resources/blood_pressure_v3.csv"));
 
-		HashMap<String, String> set1 = new HashMap<String, String>();
-		set1.put("variable1", "658778|concept2|");
-		set1.put("variable2", "84758475|concept3|");
-		variableLUT.add(set1);
+		// HashMap<String, String> set1 = new HashMap<String, String>();
+		// set1.put("variable1", "658778|concept2|");
+		// set1.put("variable2", "84758475|concept3|");
+		// variableLUT.add(set1);
+		//
+		// String[] examples = {
+		// "123567|concept1|#<:{ 847857|attribute1|= [[ @variableX ]]#<, 823781|attribute2|= [[ [1..1] @variable2 ]] #>}#>",
+		// // variableX
+		// // not
+		// // present
+		// "123567|concept1|:#<#<{ 847857|attribute1|= [[ @variable1 ]], 823781|attribute2|= [[ @variable2 ]]}#>#>",
+		// "123567|concept1|:#<{ 847857|attribute1|= [[ @variable1 ]]#<, 823781|attribute2|= [[ @variable2 ]]#>}#>",
+		// "123567|concept1|:#<{ 847857|attribute1|= [[ @variable1 ]]#<, 823781|attribute2|= [[ [0..0] @variable2 ]]#>}#>",
+		// // wrong
+		// // cardinality
+		// "123567|concept1|:#<{ 847857|attribute1|= [[ @variable1 ]], 823781|attribute2|= [[ @variable2 ]]#>}#>",
+		// // missing
+		// // scope
+		// // start
+		// "123567|concept1|:#<#<{ 847857|attribute1|= [[ @variable1 ]], 823781|attribute2|= @variable2 #>}#>",
+		// // missing
+		// // slot
+		// "123567|concept1|:#<{ 847857|attribute1|= [[ @variable1 ]]#<, 823781|attribute2|= [[ @variableX ]]#>}#>"
+		// }; // variableX
+		// // not
+		// // present
 
-		String[] examples = {
-				"123567|concept1|#<:{ 847857|attribute1|= [[ @variableX ]]#<, 823781|attribute2|= [[ [1..1] @variable2 ]] #>}#>", // variableX
-																																	// not
-																																	// present
-				"123567|concept1|:#<#<{ 847857|attribute1|= [[ @variable1 ]], 823781|attribute2|= [[ @variable2 ]]}#>#>",
-				"123567|concept1|:#<{ 847857|attribute1|= [[ @variable1 ]]#<, 823781|attribute2|= [[ @variable2 ]]#>}#>",
-				"123567|concept1|:#<{ 847857|attribute1|= [[ @variable1 ]]#<, 823781|attribute2|= [[ [0..0] @variable2 ]]#>}#>", // wrong
-																																	// cardinality
-				"123567|concept1|:#<{ 847857|attribute1|= [[ @variable1 ]], 823781|attribute2|= [[ @variable2 ]]#>}#>", // missing
-																														// scope
-																														// start
-				"123567|concept1|:#<#<{ 847857|attribute1|= [[ @variable1 ]], 823781|attribute2|= @variable2 #>}#>", // missing
-																														// slot
-				"123567|concept1|:#<{ 847857|attribute1|= [[ @variable1 ]]#<, 823781|attribute2|= [[ @variableX ]]#>}#>" }; // variableX
-																															// not
-																															// present
+		/*
+		  
+		// 
+		// [[ @definiendum ]] 
+		// 
+		( #<[[ @definiendum ]]#> )
+		#<[[@primitive]]#>
+		( #<[[ @genus ]]#> :
+			#< 704318007 | Property type (attribute) | = [[ @property_type ]], #>
+			#< 704319004 | Inheres in (attribute) | = [[ @inheres_in ]], #>
+			#< 704321009 | Characterizes (attribute) | = [[ @characterizes ]], #>
+			#< 704326004 | Precondition (attribute) | = [[ @precondition ]], #>
+			#< 370134009 | Time aspect (attribute) | = [[ @time_aspect ]], #>
+			#< 246501002 | Technique (attribute) | = [[ @technique ]], #>
+			#< 704327008 | Direct site (attribute) | = [[ @direct_site ]] #> )
+		 
+		 */
+		String template = "//\n"
+				+ "// #<[[ @definiendum ]]#>\n"
+				+ "//\n"
+				+ "( #<[[ @definiendum ]]#> )\n"
+				+ "#<[[@primitive]]#>\n"
+				+ "( #<[[ @genus ]] #> :\n"
+				+ "	#< 704318007 | Property type (attribute) | = [[ @property_type ]], #>\n"
+				+ "	#< 704319004 | Inheres in (attribute) | = [[ @inheres_in ]], #>\n"
+				+ "	#< 704321009 | Characterizes (attribute) | = [[ @characterizes ]], #>\n"
+				+ "	#< 704326004 | Precondition (attribute) | = [[ @precondition ]], #>\n"
+				+ "	#< 370134009 | Time aspect (attribute) | = [[ @time_aspect ]], #>\n"
+				+ "	#< 246501002 | Technique (attribute) | = [[ @technique ]], #>\n"
+				+ "	#< 704327008 | Direct site (attribute) | = [[ @direct_site ]], #> )";
 
-		for (String example : examples) {
+		for (HashMap<String, String> set : data) {
 
-			StringReader reader = new StringReader(example);
+			StringReader reader = new StringReader(template);
 
-			System.out.println("INPUT: " + example);
+			System.out.println("//\n// INPUT: " + set);
 
 			try {
 				// create stack of StringBuilder for the different scope blocks
@@ -173,9 +253,9 @@ public class SNOMEDCTTemplatePreprocessor {
 
 							// look up value(s) of variables/paths
 							// TODO: stub
-							String value = set1.get(variableName);
+							String value = set.get(variableName);
 
-							int noOfValues = 1;
+							int noOfValues = value == null ? 0 : 1;
 
 							// check value(s) against constraints
 							// TODO: stub
@@ -235,13 +315,50 @@ public class SNOMEDCTTemplatePreprocessor {
 				if (level != 0)
 					throw new Exception("Scope end tag missing");
 
-				System.out.println("OUTPUT: "
-						+ scopeBlockTextStack.peek().toString());
+				String output = scopeBlockTextStack.peek().toString();
+
+				output = cleanUpCommaColon(output);
+
+				System.out.println(output);
 			} catch (Exception e) {
-				System.out.println("ERROR: " + e.toString());
+				System.out.println("// ERROR: " + e.toString());
 			}
 			System.out.println();
 		}
+	}
+
+	private static String cleanUpCommaColon(String str) {
+
+		StringBuilder sb = new StringBuilder();
+		int i = 0;
+		int length = str.length();
+
+		while (i < length) {
+			char c = str.charAt(i);
+			// if it's a comma or colon, check that next char, optionally after white
+			// spaces, isn't a ')' or a '}'
+			if (c == ',' || c == ':') {
+				int j = i + 1;
+				while (j < length) {
+					char d = str.charAt(j);
+					if (d == ' ' || d == '\n' || d == '\r' || d == '\t') {
+						j++;
+						continue;
+					}
+					if (d == ')' || d == '}') {
+						i++;
+						c = str.charAt(i);
+						break;
+					}
+					break;
+				}
+				sb.append(c);
+			} else
+				sb.append(c);
+			i++;
+		}
+
+		return sb.toString();
 	}
 
 }
