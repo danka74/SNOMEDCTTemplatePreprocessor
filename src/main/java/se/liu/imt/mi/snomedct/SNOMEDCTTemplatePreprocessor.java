@@ -317,7 +317,7 @@ public class SNOMEDCTTemplatePreprocessor {
 
 				String output = scopeBlockTextStack.peek().toString();
 
-				output = cleanUpCommaColon(output);
+				output = cleanUpCommas(output);
 
 				System.out.println(output);
 			} catch (Exception e) {
@@ -327,7 +327,7 @@ public class SNOMEDCTTemplatePreprocessor {
 		}
 	}
 
-	private static String cleanUpCommaColon(String str) {
+	private static String cleanUpCommas(String str) {
 
 		StringBuilder sb = new StringBuilder();
 		int i = 0;
