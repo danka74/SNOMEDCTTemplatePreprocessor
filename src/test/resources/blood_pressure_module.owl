@@ -1,0 +1,2116 @@
+Prefix(:=<http://snomed.info/sct/900000000000207008module0#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(field:=<http://snomed.info/field/>)
+
+
+Ontology(<http://snomed.info/sct/900000000000207008module0>
+
+Declaration(Class(<http://snomed.info/id/102299009>))
+Declaration(Class(<http://snomed.info/id/102538003>))
+Declaration(Class(<http://snomed.info/id/10904000>))
+Declaration(Class(<http://snomed.info/id/113257007>))
+Declaration(Class(<http://snomed.info/id/113343008>))
+Declaration(Class(<http://snomed.info/id/11527006>))
+Declaration(Class(<http://snomed.info/id/118433006>))
+Declaration(Class(<http://snomed.info/id/118633002>))
+Declaration(Class(<http://snomed.info/id/119201007>))
+Declaration(Class(<http://snomed.info/id/119202000>))
+Declaration(Class(<http://snomed.info/id/119206002>))
+Declaration(Class(<http://snomed.info/id/119553000>))
+Declaration(Class(<http://snomed.info/id/120573002>))
+Declaration(Class(<http://snomed.info/id/120575009>))
+Declaration(Class(<http://snomed.info/id/12123001>))
+Declaration(Class(<http://snomed.info/id/122972007>))
+Declaration(Class(<http://snomed.info/id/123027009>))
+Declaration(Class(<http://snomed.info/id/123037004>))
+Declaration(Class(<http://snomed.info/id/127951001>))
+Declaration(Class(<http://snomed.info/id/128262006>))
+Declaration(Class(<http://snomed.info/id/128263001>))
+Declaration(Class(<http://snomed.info/id/13363002>))
+Declaration(Class(<http://snomed.info/id/138875005>))
+Declaration(Class(<http://snomed.info/id/163033001>))
+Declaration(Class(<http://snomed.info/id/163034007>))
+Declaration(Class(<http://snomed.info/id/163035008>))
+Declaration(Class(<http://snomed.info/id/165077006>))
+Declaration(Class(<http://snomed.info/id/17398003>))
+Declaration(Class(<http://snomed.info/id/174255007>))
+Declaration(Class(<http://snomed.info/id/20139000>))
+Declaration(Class(<http://snomed.info/id/21814001>))
+Declaration(Class(<http://snomed.info/id/22943007>))
+Declaration(Class(<http://snomed.info/id/244339007>))
+Declaration(Class(<http://snomed.info/id/244390008>))
+Declaration(Class(<http://snomed.info/id/250171008>))
+Declaration(Class(<http://snomed.info/id/250766006>))
+Declaration(Class(<http://snomed.info/id/251068006>))
+Declaration(Class(<http://snomed.info/id/251069003>))
+Declaration(Class(<http://snomed.info/id/251070002>))
+Declaration(Class(<http://snomed.info/id/251071003>))
+Declaration(Class(<http://snomed.info/id/251073000>))
+Declaration(Class(<http://snomed.info/id/251074006>))
+Declaration(Class(<http://snomed.info/id/251075007>))
+Declaration(Class(<http://snomed.info/id/251076008>))
+Declaration(Class(<http://snomed.info/id/251078009>))
+Declaration(Class(<http://snomed.info/id/251079001>))
+Declaration(Class(<http://snomed.info/id/252059006>))
+Declaration(Class(<http://snomed.info/id/252060001>))
+Declaration(Class(<http://snomed.info/id/252074008>))
+Declaration(Class(<http://snomed.info/id/252076005>))
+Declaration(Class(<http://snomed.info/id/252077001>))
+Declaration(Class(<http://snomed.info/id/252079003>))
+Declaration(Class(<http://snomed.info/id/252080000>))
+Declaration(Class(<http://snomed.info/id/2546009>))
+Declaration(Class(<http://snomed.info/id/271605009>))
+Declaration(Class(<http://snomed.info/id/271649006>))
+Declaration(Class(<http://snomed.info/id/271650006>))
+Declaration(Class(<http://snomed.info/id/272099008>))
+Declaration(Class(<http://snomed.info/id/272103003>))
+Declaration(Class(<http://snomed.info/id/272104009>))
+Declaration(Class(<http://snomed.info/id/272106006>))
+Declaration(Class(<http://snomed.info/id/276755008>))
+Declaration(Class(<http://snomed.info/id/276756009>))
+Declaration(Class(<http://snomed.info/id/276760007>))
+Declaration(Class(<http://snomed.info/id/276762004>))
+Declaration(Class(<http://snomed.info/id/276763009>))
+Declaration(Class(<http://snomed.info/id/276764003>))
+Declaration(Class(<http://snomed.info/id/276765002>))
+Declaration(Class(<http://snomed.info/id/276766001>))
+Declaration(Class(<http://snomed.info/id/276767005>))
+Declaration(Class(<http://snomed.info/id/276769008>))
+Declaration(Class(<http://snomed.info/id/276772001>))
+Declaration(Class(<http://snomed.info/id/276773006>))
+Declaration(Class(<http://snomed.info/id/276774000>))
+Declaration(Class(<http://snomed.info/id/276775004>))
+Declaration(Class(<http://snomed.info/id/276776003>))
+Declaration(Class(<http://snomed.info/id/276777007>))
+Declaration(Class(<http://snomed.info/id/276778002>))
+Declaration(Class(<http://snomed.info/id/276779005>))
+Declaration(Class(<http://snomed.info/id/276780008>))
+Declaration(Class(<http://snomed.info/id/276781007>))
+Declaration(Class(<http://snomed.info/id/276783005>))
+Declaration(Class(<http://snomed.info/id/276784004>))
+Declaration(Class(<http://snomed.info/id/276785003>))
+Declaration(Class(<http://snomed.info/id/276786002>))
+Declaration(Class(<http://snomed.info/id/276788001>))
+Declaration(Class(<http://snomed.info/id/277712000>))
+Declaration(Class(<http://snomed.info/id/27832009>))
+Declaration(Class(<http://snomed.info/id/28017001>))
+Declaration(Class(<http://snomed.info/id/281157001>))
+Declaration(Class(<http://snomed.info/id/281158006>))
+Declaration(Class(<http://snomed.info/id/281159003>))
+Declaration(Class(<http://snomed.info/id/281232002>))
+Declaration(Class(<http://snomed.info/id/281233007>))
+Declaration(Class(<http://snomed.info/id/281238003>))
+Declaration(Class(<http://snomed.info/id/281467004>))
+Declaration(Class(<http://snomed.info/id/281480001>))
+Declaration(Class(<http://snomed.info/id/281586009>))
+Declaration(Class(<http://snomed.info/id/281827007>))
+Declaration(Class(<http://snomed.info/id/281828002>))
+Declaration(Class(<http://snomed.info/id/29092000>))
+Declaration(Class(<http://snomed.info/id/30021000>))
+Declaration(Class(<http://snomed.info/id/303102005>))
+Declaration(Class(<http://snomed.info/id/303340002>))
+Declaration(Class(<http://snomed.info/id/304061005>))
+Declaration(Class(<http://snomed.info/id/304062003>))
+Declaration(Class(<http://snomed.info/id/306954006>))
+Declaration(Class(<http://snomed.info/id/306955007>))
+Declaration(Class(<http://snomed.info/id/307142001>))
+Declaration(Class(<http://snomed.info/id/308734009>))
+Declaration(Class(<http://snomed.info/id/310611001>))
+Declaration(Class(<http://snomed.info/id/310612008>))
+Declaration(Class(<http://snomed.info/id/310787001>))
+Declaration(Class(<http://snomed.info/id/310886004>))
+Declaration(Class(<http://snomed.info/id/312333002>))
+Declaration(Class(<http://snomed.info/id/312419003>))
+Declaration(Class(<http://snomed.info/id/314235006>))
+Declaration(Class(<http://snomed.info/id/314237003>))
+Declaration(Class(<http://snomed.info/id/314357001>))
+Declaration(Class(<http://snomed.info/id/314362000>))
+Declaration(Class(<http://snomed.info/id/314438006>))
+Declaration(Class(<http://snomed.info/id/314439003>))
+Declaration(Class(<http://snomed.info/id/314440001>))
+Declaration(Class(<http://snomed.info/id/314441002>))
+Declaration(Class(<http://snomed.info/id/314442009>))
+Declaration(Class(<http://snomed.info/id/314443004>))
+Declaration(Class(<http://snomed.info/id/314444005>))
+Declaration(Class(<http://snomed.info/id/314445006>))
+Declaration(Class(<http://snomed.info/id/314446007>))
+Declaration(Class(<http://snomed.info/id/314448008>))
+Declaration(Class(<http://snomed.info/id/314449000>))
+Declaration(Class(<http://snomed.info/id/314451001>))
+Declaration(Class(<http://snomed.info/id/314452008>))
+Declaration(Class(<http://snomed.info/id/314453003>))
+Declaration(Class(<http://snomed.info/id/314454009>))
+Declaration(Class(<http://snomed.info/id/314455005>))
+Declaration(Class(<http://snomed.info/id/314456006>))
+Declaration(Class(<http://snomed.info/id/314457002>))
+Declaration(Class(<http://snomed.info/id/314458007>))
+Declaration(Class(<http://snomed.info/id/314459004>))
+Declaration(Class(<http://snomed.info/id/314460009>))
+Declaration(Class(<http://snomed.info/id/314461008>))
+Declaration(Class(<http://snomed.info/id/314462001>))
+Declaration(Class(<http://snomed.info/id/314463006>))
+Declaration(Class(<http://snomed.info/id/314464000>))
+Declaration(Class(<http://snomed.info/id/314465004>))
+Declaration(Class(<http://snomed.info/id/315612005>))
+Declaration(Class(<http://snomed.info/id/315613000>))
+Declaration(Class(<http://snomed.info/id/32530005>))
+Declaration(Class(<http://snomed.info/id/33586001>))
+Declaration(Class(<http://snomed.info/id/33858002>))
+Declaration(Class(<http://snomed.info/id/35532006>))
+Declaration(Class(<http://snomed.info/id/360592004>))
+Declaration(Class(<http://snomed.info/id/360593009>))
+Declaration(Class(<http://snomed.info/id/360601005>))
+Declaration(Class(<http://snomed.info/id/360612005>))
+Declaration(Class(<http://snomed.info/id/362937008>))
+Declaration(Class(<http://snomed.info/id/362981000>))
+Declaration(Class(<http://snomed.info/id/363536003>))
+Declaration(Class(<http://snomed.info/id/363787002>))
+Declaration(Class(<http://snomed.info/id/363788007>))
+Declaration(Class(<http://snomed.info/id/363789004>))
+Declaration(Class(<http://snomed.info/id/363790008>))
+Declaration(Class(<http://snomed.info/id/364066008>))
+Declaration(Class(<http://snomed.info/id/364087003>))
+Declaration(Class(<http://snomed.info/id/364088008>))
+Declaration(Class(<http://snomed.info/id/364089000>))
+Declaration(Class(<http://snomed.info/id/364090009>))
+Declaration(Class(<http://snomed.info/id/364830008>))
+Declaration(Class(<http://snomed.info/id/37087001>))
+Declaration(Class(<http://snomed.info/id/3711007>))
+Declaration(Class(<http://snomed.info/id/371829003>))
+Declaration(Class(<http://snomed.info/id/371830008>))
+Declaration(Class(<http://snomed.info/id/371831007>))
+Declaration(Class(<http://snomed.info/id/371832000>))
+Declaration(Class(<http://snomed.info/id/371833005>))
+Declaration(Class(<http://snomed.info/id/371834004>))
+Declaration(Class(<http://snomed.info/id/37476000>))
+Declaration(Class(<http://snomed.info/id/386532001>))
+Declaration(Class(<http://snomed.info/id/386533006>))
+Declaration(Class(<http://snomed.info/id/386534000>))
+Declaration(Class(<http://snomed.info/id/386536003>))
+Declaration(Class(<http://snomed.info/id/38809004>))
+Declaration(Class(<http://snomed.info/id/38866009>))
+Declaration(Class(<http://snomed.info/id/39499005>))
+Declaration(Class(<http://snomed.info/id/396277003>))
+Declaration(Class(<http://snomed.info/id/399023006>))
+Declaration(Class(<http://snomed.info/id/399304008>))
+Declaration(Class(<http://snomed.info/id/399913000>))
+Declaration(Class(<http://snomed.info/id/400974009>))
+Declaration(Class(<http://snomed.info/id/400975005>))
+Declaration(Class(<http://snomed.info/id/404684003>))
+Declaration(Class(<http://snomed.info/id/407554009>))
+Declaration(Class(<http://snomed.info/id/407555005>))
+Declaration(Class(<http://snomed.info/id/407556006>))
+Declaration(Class(<http://snomed.info/id/407557002>))
+Declaration(Class(<http://snomed.info/id/409708007>))
+Declaration(Class(<http://snomed.info/id/413605002>))
+Declaration(Class(<http://snomed.info/id/413606001>))
+Declaration(Class(<http://snomed.info/id/414237002>))
+Declaration(Class(<http://snomed.info/id/4146003>))
+Declaration(Class(<http://snomed.info/id/416152001>))
+Declaration(Class(<http://snomed.info/id/416319003>))
+Declaration(Class(<http://snomed.info/id/416550000>))
+Declaration(Class(<http://snomed.info/id/416631005>))
+Declaration(Class(<http://snomed.info/id/416775004>))
+Declaration(Class(<http://snomed.info/id/417437006>))
+Declaration(Class(<http://snomed.info/id/419605007>))
+Declaration(Class(<http://snomed.info/id/420473002>))
+Declaration(Class(<http://snomed.info/id/421466002>))
+Declaration(Class(<http://snomed.info/id/42586008>))
+Declaration(Class(<http://snomed.info/id/430757002>))
+Declaration(Class(<http://snomed.info/id/442083009>))
+Declaration(Class(<http://snomed.info/id/445731001>))
+Declaration(Class(<http://snomed.info/id/445886006>))
+Declaration(Class(<http://snomed.info/id/446226005>))
+Declaration(Class(<http://snomed.info/id/446841001>))
+Declaration(Class(<http://snomed.info/id/45048000>))
+Declaration(Class(<http://snomed.info/id/46680005>))
+Declaration(Class(<http://snomed.info/id/473448003>))
+Declaration(Class(<http://snomed.info/id/473450006>))
+Declaration(Class(<http://snomed.info/id/480000>))
+Declaration(Class(<http://snomed.info/id/51114001>))
+Declaration(Class(<http://snomed.info/id/51185008>))
+Declaration(Class(<http://snomed.info/id/51833009>))
+Declaration(Class(<http://snomed.info/id/51840005>))
+Declaration(Class(<http://snomed.info/id/52530000>))
+Declaration(Class(<http://snomed.info/id/53085002>))
+Declaration(Class(<http://snomed.info/id/56459004>))
+Declaration(Class(<http://snomed.info/id/59652004>))
+Declaration(Class(<http://snomed.info/id/59820001>))
+Declaration(Class(<http://snomed.info/id/61685007>))
+Declaration(Class(<http://snomed.info/id/63190004>))
+Declaration(Class(<http://snomed.info/id/64401006>))
+Declaration(Class(<http://snomed.info/id/66019005>))
+Declaration(Class(<http://snomed.info/id/67734004>))
+Declaration(Class(<http://snomed.info/id/6797001>))
+Declaration(Class(<http://snomed.info/id/69548008>))
+Declaration(Class(<http://snomed.info/id/699589007>))
+Declaration(Class(<http://snomed.info/id/699590003>))
+Declaration(Class(<http://snomed.info/id/699593001>))
+Declaration(Class(<http://snomed.info/id/699617006>))
+Declaration(Class(<http://snomed.info/id/70104002>))
+Declaration(Class(<http://snomed.info/id/70791007>))
+Declaration(Class(<http://snomed.info/id/71420008>))
+Declaration(Class(<http://snomed.info/id/72313002>))
+Declaration(Class(<http://snomed.info/id/72410000>))
+Declaration(Class(<http://snomed.info/id/73829009>))
+Declaration(Class(<http://snomed.info/id/7389001>))
+Declaration(Class(<http://snomed.info/id/75367002>))
+Declaration(Class(<http://snomed.info/id/76882007>))
+Declaration(Class(<http://snomed.info/id/774007>))
+Declaration(Class(<http://snomed.info/id/79561009>))
+Declaration(Class(<http://snomed.info/id/79996001>))
+Declaration(Class(<http://snomed.info/id/80891009>))
+Declaration(Class(<http://snomed.info/id/81040000>))
+Declaration(Class(<http://snomed.info/id/82121006>))
+Declaration(Class(<http://snomed.info/id/82471001>))
+Declaration(Class(<http://snomed.info/id/85756007>))
+Declaration(Class(<http://snomed.info/id/86547008>))
+Declaration(Class(<http://snomed.info/id/87179004>))
+Declaration(Class(<http://snomed.info/id/87784001>))
+Declaration(Class(<http://snomed.info/id/87878005>))
+Declaration(Class(<http://snomed.info/id/91689009>))
+Declaration(Class(<http://snomed.info/id/91717005>))
+Declaration(Class(<http://snomed.info/id/91723000>))
+Declaration(Class(<http://snomed.info/id/91744000>))
+Declaration(Class(<http://snomed.info/id/91829005>))
+Declaration(Class(<http://snomed.info/id/9851009>))
+Declaration(ObjectProperty(<http://snomed.info/id/363714003>))
+Declaration(ObjectProperty(<http://snomed.info/id/609096000>))
+Declaration(AnnotationProperty(field:Description.term.en-us.preferred))
+Declaration(AnnotationProperty(field:Description.term.en-us.synonym))
+Declaration(AnnotationProperty(field:TextDefinition.term))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://snomed.info/id/363714003> (Interprets (attribute))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/363714003> "Interprets")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/363714003> "Interprets (attribute)")
+
+# Object Property: <http://snomed.info/id/609096000> (Role group (attribute))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/609096000> "Role group")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/609096000> "Role group (attribute)")
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://snomed.info/id/102299009> (Structure of vein of trunk (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/102299009> "Structure of vein of trunk")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/102299009> "Vein of trunk")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/102299009> "Structure of vein of trunk (body structure)")
+SubClassOf(<http://snomed.info/id/102299009> ObjectIntersectionOf(<http://snomed.info/id/29092000> <http://snomed.info/id/306955007>))
+
+# Class: <http://snomed.info/id/102538003> (Recumbent body position (finding))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/102538003> "Recumbent body position")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/102538003> "Lying position")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/102538003> "Lying recumbent")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/102538003> "Recumbent body position (finding)")
+SubClassOf(<http://snomed.info/id/102538003> <http://snomed.info/id/9851009>)
+
+# Class: <http://snomed.info/id/10904000> (Orthostatic body position (finding))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/10904000> "Orthostatic body position")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/10904000> "Stance position")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/10904000> "Standing")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/10904000> "Standing position")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/10904000> "Orthostatic body position (finding)")
+SubClassOf(<http://snomed.info/id/10904000> <http://snomed.info/id/9851009>)
+
+# Class: <http://snomed.info/id/113257007> (Structure of cardiovascular system (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/113257007> "Structure of cardiovascular system")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/113257007> "Cardiovascular structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/113257007> "Cardiovascular system")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/113257007> "Circulatory system")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/113257007> "Structure of cardiovascular system (body structure)")
+SubClassOf(<http://snomed.info/id/113257007> <http://snomed.info/id/91689009>)
+
+# Class: <http://snomed.info/id/113343008> (Body organ structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/113343008> "Body organ structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/113343008> "Body organ")
+AnnotationAssertion(field:TextDefinition.term <http://snomed.info/id/113343008> "An anatomical structure that consists of the maximal set of organ parts so connected to one another that together they constitute a self-contained unit of macroscopic anatomy, distinct both morphologically and functionally from other such units. Together with other organs, an organ constitutes an organ system or a body part. An organ is divisible into organ parts but not organs (examples: femur, biceps, liver, heart, aorta, sciatic nerve, ovary).")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/113343008> "Body organ structure (body structure)")
+SubClassOf(<http://snomed.info/id/113343008> <http://snomed.info/id/91723000>)
+
+# Class: <http://snomed.info/id/11527006> (Arterial system structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/11527006> "Arterial system structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/11527006> "All arteries")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/11527006> "Arterial system")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/11527006> "Arterial system structure (body structure)")
+SubClassOf(<http://snomed.info/id/11527006> <http://snomed.info/id/113257007>)
+
+# Class: <http://snomed.info/id/118433006> (Pulmonary artery wedge pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/118433006> "Pulmonary artery wedge pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/118433006> "Indirect left atrial pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/118433006> "PAOP - Pulmonary artery occlusion pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/118433006> "PAWP - Pulmonary artery wedge pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/118433006> "PCWP - Pulmonary capillary wedge pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/118433006> "Pulmonary artery occlusion pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/118433006> "Pulmonary artery wedge pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/118433006> ObjectIntersectionOf(<http://snomed.info/id/276760007> <http://snomed.info/id/37087001>))
+
+# Class: <http://snomed.info/id/118633002> (Artery of thorax (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/118633002> "Artery of thorax")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/118633002> "Artery of thorax (body structure)")
+SubClassOf(<http://snomed.info/id/118633002> ObjectIntersectionOf(<http://snomed.info/id/39499005> <http://snomed.info/id/51185008>))
+
+# Class: <http://snomed.info/id/119201007> (Cardiovascular organ part (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/119201007> "Cardiovascular organ part")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/119201007> "Cardiovascular organ part (body structure)")
+SubClassOf(<http://snomed.info/id/119201007> ObjectIntersectionOf(<http://snomed.info/id/113257007> <http://snomed.info/id/91717005>))
+
+# Class: <http://snomed.info/id/119202000> (Heart part (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/119202000> "Heart part")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/119202000> "Heart part (body structure)")
+SubClassOf(<http://snomed.info/id/119202000> ObjectIntersectionOf(<http://snomed.info/id/119201007> <http://snomed.info/id/80891009>))
+
+# Class: <http://snomed.info/id/119206002> (Blood vessel part (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/119206002> "Blood vessel part")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/119206002> "Blood vessel part (body structure)")
+SubClassOf(<http://snomed.info/id/119206002> ObjectIntersectionOf(<http://snomed.info/id/119201007> <http://snomed.info/id/59820001>))
+
+# Class: <http://snomed.info/id/119553000> (Venous system structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/119553000> "Venous system structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/119553000> "Venous system")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/119553000> "Venous system structure (body structure)")
+SubClassOf(<http://snomed.info/id/119553000> <http://snomed.info/id/113257007>)
+
+# Class: <http://snomed.info/id/120573002> (Extremity part (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/120573002> "Extremity part")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/120573002> "Extremity part (body structure)")
+SubClassOf(<http://snomed.info/id/120573002> <http://snomed.info/id/66019005>)
+
+# Class: <http://snomed.info/id/120575009> (Lower extremity part (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/120575009> "Lower extremity part")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/120575009> "Lower extremity part (body structure)")
+SubClassOf(<http://snomed.info/id/120575009> ObjectIntersectionOf(<http://snomed.info/id/120573002> <http://snomed.info/id/61685007>))
+
+# Class: <http://snomed.info/id/12123001> (Internal jugular vein structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/12123001> "Internal jugular vein structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/12123001> "Internal jugular vein")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/12123001> "Internal jugular vein structure (body structure)")
+SubClassOf(<http://snomed.info/id/12123001> ObjectIntersectionOf(<http://snomed.info/id/360612005> <http://snomed.info/id/63190004>))
+
+# Class: <http://snomed.info/id/122972007> (Pulmonary venous structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/122972007> "Pulmonary venous structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/122972007> "Vein of lung")
+AnnotationAssertion(field:TextDefinition.term <http://snomed.info/id/122972007> "Any vein draining the lungs, including pulmonary veins proper and their tributaries")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/122972007> "Pulmonary venous structure (body structure)")
+SubClassOf(<http://snomed.info/id/122972007> ObjectIntersectionOf(<http://snomed.info/id/281158006> <http://snomed.info/id/38809004> <http://snomed.info/id/64401006>))
+
+# Class: <http://snomed.info/id/123027009> (24 hours (qualifier value) )
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/123027009> "24 hours")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/123027009> "24 hours (qualifier value)")
+SubClassOf(<http://snomed.info/id/123027009> ObjectIntersectionOf(<http://snomed.info/id/310886004> <http://snomed.info/id/7389001>))
+
+# Class: <http://snomed.info/id/123037004> (Body structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/123037004> "Body structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/123037004> "Body structures")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/123037004> "Body structure (body structure)")
+SubClassOf(<http://snomed.info/id/123037004> <http://snomed.info/id/138875005>)
+
+# Class: <http://snomed.info/id/127951001> (Structure of subregion of lower limb (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/127951001> "Structure of subregion of lower limb")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/127951001> "Leg region")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/127951001> "Lower extremity region")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/127951001> "Structure of subregion of lower limb (body structure)")
+SubClassOf(<http://snomed.info/id/127951001> <http://snomed.info/id/120575009>)
+
+# Class: <http://snomed.info/id/128262006> (Upper body structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/128262006> "Upper body structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/128262006> "Upper body")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/128262006> "Upper body structure (body structure)")
+SubClassOf(<http://snomed.info/id/128262006> <http://snomed.info/id/38866009>)
+
+# Class: <http://snomed.info/id/128263001> (Lower body structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/128263001> "Lower body structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/128263001> "Lower body")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/128263001> "Lower body structure (body structure)")
+SubClassOf(<http://snomed.info/id/128263001> <http://snomed.info/id/38866009>)
+
+# Class: <http://snomed.info/id/13363002> (Structure of posterior tibial artery (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/13363002> "Structure of posterior tibial artery")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/13363002> "Posterior tibial artery")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/13363002> "Structure of posterior tibial artery (body structure)")
+SubClassOf(<http://snomed.info/id/13363002> ObjectIntersectionOf(<http://snomed.info/id/30021000> <http://snomed.info/id/314357001>))
+
+# Class: <http://snomed.info/id/138875005> (SNOMED CT Concept (SNOMED RT+CTV3))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/138875005> "SNOMED CT Concept")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/138875005> "SNOMED CT has been created by combining SNOMED RT and a computer-based nomenclature and classification known as Read Codes Version 3, which was created on behalf of the U.K. Department of Health.")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/138875005> "SNOMED Clinical Terms version: 20160731 [R] (July 2016 Release)")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/138875005> "SNOMED CT Concept (SNOMED RT+CTV3)")
+
+# Class: <http://snomed.info/id/163033001> (Lying blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/163033001> "Lying blood pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/163033001> "Lying blood pressure reading")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/163033001> "Lying blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/163033001> <http://snomed.info/id/75367002>)
+
+# Class: <http://snomed.info/id/163034007> (Standing blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/163034007> "Standing blood pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/163034007> "Standing blood pressure reading")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/163034007> "Standing blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/163034007> <http://snomed.info/id/75367002>)
+
+# Class: <http://snomed.info/id/163035008> (Sitting blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/163035008> "Sitting blood pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/163035008> "Sitting blood pressure reading")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/163035008> "Sitting blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/163035008> <http://snomed.info/id/75367002>)
+
+# Class: <http://snomed.info/id/165077006> (Intracardiac pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/165077006> "Intracardiac pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/165077006> "Cardiac pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/165077006> "Intracardiac pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/165077006> <http://snomed.info/id/310612008>)
+
+# Class: <http://snomed.info/id/17398003> (Structure of left side of heart (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/17398003> "Structure of left side of heart")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/17398003> "Left side of heart")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/17398003> "Structure of left side of heart (body structure)")
+SubClassOf(<http://snomed.info/id/17398003> <http://snomed.info/id/91744000>)
+
+# Class: <http://snomed.info/id/174255007> (Non-invasive diastolic arterial pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/174255007> "Non-invasive diastolic arterial pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/174255007> "Non-invasive diastolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/174255007> "Non-invasive diastolic arterial pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/174255007> <http://snomed.info/id/251076008>)
+
+# Class: <http://snomed.info/id/20139000> (Structure of respiratory system (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/20139000> "Structure of respiratory system")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/20139000> "Respiratory system")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/20139000> "Respiratory system structure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/20139000> "Structure of respiratory system (body structure)")
+SubClassOf(<http://snomed.info/id/20139000> <http://snomed.info/id/312419003>)
+
+# Class: <http://snomed.info/id/21814001> (Cardiac ventricular structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/21814001> "Cardiac ventricular structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/21814001> "Cardiac ventricle")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/21814001> "Ventricle")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/21814001> "Cardiac ventricular structure (body structure)")
+SubClassOf(<http://snomed.info/id/21814001> <http://snomed.info/id/91744000>)
+
+# Class: <http://snomed.info/id/22943007> (Trunk structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/22943007> "Trunk structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/22943007> "Torso")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/22943007> "Trunk")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/22943007> "Trunk structure (body structure)")
+SubClassOf(<http://snomed.info/id/22943007> <http://snomed.info/id/38866009>)
+
+# Class: <http://snomed.info/id/244339007> (Foot artery (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/244339007> "Foot artery")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/244339007> "Foot artery (body structure)")
+SubClassOf(<http://snomed.info/id/244339007> ObjectIntersectionOf(<http://snomed.info/id/312333002> <http://snomed.info/id/56459004>))
+
+# Class: <http://snomed.info/id/244390008> (Venous structure of head and/or neck (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/244390008> "Venous structure of head and/or neck")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/244390008> "Head and neck vein")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/244390008> "Vein of head and neck")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/244390008> "Venous structure of head and neck")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/244390008> "Venous structure of head and/or neck (body structure)")
+SubClassOf(<http://snomed.info/id/244390008> ObjectIntersectionOf(<http://snomed.info/id/281232002> <http://snomed.info/id/421466002>))
+
+# Class: <http://snomed.info/id/250171008> (Clinical history and observation findings (finding))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/250171008> "Clinical history and observation findings")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/250171008> "Clinical history and observations")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/250171008> "Clinical history and observation findings (finding)")
+SubClassOf(<http://snomed.info/id/250171008> <http://snomed.info/id/404684003>)
+
+# Class: <http://snomed.info/id/250766006> (Jugular bulb pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/250766006> "Jugular bulb pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/250766006> "Jugular bulb pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/250766006> <http://snomed.info/id/71420008>)
+
+# Class: <http://snomed.info/id/251068006> (Atrial pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/251068006> "Atrial pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/251068006> "Atrial pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/251068006> <http://snomed.info/id/165077006>)
+
+# Class: <http://snomed.info/id/251069003> (Ventricular pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/251069003> "Ventricular pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/251069003> "Ventricular pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/251069003> <http://snomed.info/id/165077006>)
+
+# Class: <http://snomed.info/id/251070002> (Non-invasive systolic arterial pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/251070002> "Non-invasive systolic arterial pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/251070002> "Non-invasive systolic blood pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/251070002> "SAP - Systolic arterial pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/251070002> "Non-invasive systolic arterial pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/251070002> <http://snomed.info/id/251076008>)
+
+# Class: <http://snomed.info/id/251071003> (Invasive systolic arterial pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/251071003> "Invasive systolic arterial pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/251071003> "Invasive systolic blood pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/251071003> "SAP - Systolic arterial pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/251071003> "Invasive systolic arterial pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/251071003> <http://snomed.info/id/386532001>)
+
+# Class: <http://snomed.info/id/251073000> (Invasive diastolic arterial pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/251073000> "Invasive diastolic arterial pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/251073000> "Invasive diastolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/251073000> "Invasive diastolic arterial pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/251073000> <http://snomed.info/id/386532001>)
+
+# Class: <http://snomed.info/id/251074006> (Non-invasive mean arterial pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/251074006> "Non-invasive mean arterial pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/251074006> "MAP - Mean arterial pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/251074006> "Non-invasive mean blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/251074006> "Non-invasive mean arterial pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/251074006> <http://snomed.info/id/251076008>)
+
+# Class: <http://snomed.info/id/251075007> (Invasive mean arterial pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/251075007> "Invasive mean arterial pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/251075007> "Invasive mean blood pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/251075007> "MAP - Mean arterial pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/251075007> "Invasive mean arterial pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/251075007> ObjectIntersectionOf(<http://snomed.info/id/386532001> <http://snomed.info/id/6797001>))
+
+# Class: <http://snomed.info/id/251076008> (Non-invasive arterial pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/251076008> "Non-invasive arterial pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/251076008> "Cuff blood pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/251076008> "NIBP - Non-invasive blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/251076008> "Non-invasive arterial pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/251076008> <http://snomed.info/id/386534000>)
+
+# Class: <http://snomed.info/id/251078009> (Post-vasodilatation arterial pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/251078009> "Post-vasodilatation arterial pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/251078009> "Post-vasodilatation arterial pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/251078009> <http://snomed.info/id/386534000>)
+
+# Class: <http://snomed.info/id/251079001> (Segmental pressure (blood pressure) (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/251079001> "Segmental pressure (blood pressure)")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/251079001> "Segmental pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/251079001> "Segmental pressure (blood pressure) (observable entity)")
+SubClassOf(<http://snomed.info/id/251079001> <http://snomed.info/id/75367002>)
+
+# Class: <http://snomed.info/id/252059006> (Vascular measure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/252059006> "Vascular measure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/252059006> "Vascular measurements")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/252059006> "Vascular measure (observable entity)")
+SubClassOf(<http://snomed.info/id/252059006> ObjectIntersectionOf(<http://snomed.info/id/310611001> <http://snomed.info/id/364087003>))
+
+# Class: <http://snomed.info/id/252060001> (Arterial measure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/252060001> "Arterial measure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/252060001> "Arterial measurement")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/252060001> "Arterial measure (observable entity)")
+SubClassOf(<http://snomed.info/id/252060001> ObjectIntersectionOf(<http://snomed.info/id/252059006> <http://snomed.info/id/364088008>))
+
+# Class: <http://snomed.info/id/252074008> (Venous measure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/252074008> "Venous measure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/252074008> "Venous measurement")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/252074008> "Venous measure (observable entity)")
+SubClassOf(<http://snomed.info/id/252074008> <http://snomed.info/id/252059006>)
+
+# Class: <http://snomed.info/id/252076005> (Venous pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/252076005> "Venous pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/252076005> "VP - Venous pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/252076005> "Venous pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/252076005> ObjectIntersectionOf(<http://snomed.info/id/252074008> <http://snomed.info/id/75367002>))
+
+# Class: <http://snomed.info/id/252077001> (Venous mean pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/252077001> "Venous mean pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/252077001> "Venous mean pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/252077001> <http://snomed.info/id/252076005>)
+
+# Class: <http://snomed.info/id/252079003> (Venous ambulatory pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/252079003> "Venous ambulatory pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/252079003> "AVP - Venous ambulatory pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/252079003> "Venous ambulatory pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/252079003> <http://snomed.info/id/252076005>)
+
+# Class: <http://snomed.info/id/252080000> (Ambulatory post-hyperemic venous pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/252080000> "Ambulatory post-hyperemic venous pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/252080000> "Ambulatory post-hyperemic venous pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/252080000> <http://snomed.info/id/252079003>)
+
+# Class: <http://snomed.info/id/2546009> (Night time (qualifier value))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/2546009> "Night time")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/2546009> "At night")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/2546009> "Nocturnal")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/2546009> "nocte")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/2546009> "on - omni nocte")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/2546009> "Night time (qualifier value)")
+SubClassOf(<http://snomed.info/id/2546009> ObjectIntersectionOf(<http://snomed.info/id/272106006> <http://snomed.info/id/7389001>))
+
+# Class: <http://snomed.info/id/271605009> (Position of body and posture (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/271605009> "Position of body and posture")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/271605009> "Position of body and posture (observable entity)")
+SubClassOf(<http://snomed.info/id/271605009> <http://snomed.info/id/363790008>)
+
+# Class: <http://snomed.info/id/271649006> (Systolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/271649006> "Systolic blood pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/271649006> "SAP - Systolic arterial pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/271649006> "Systolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/271649006> <http://snomed.info/id/75367002>)
+
+# Class: <http://snomed.info/id/271650006> (Diastolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/271650006> "Diastolic blood pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/271650006> "DAP - Diastolic arterial pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/271650006> "DBP - Diastolic blood pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/271650006> "Diastolic arterial pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/271650006> "Diastolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/271650006> <http://snomed.info/id/75367002>)
+
+# Class: <http://snomed.info/id/272099008> (Descriptor (qualifier value))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/272099008> "Descriptor")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/272099008> "Descriptor (qualifier value)")
+SubClassOf(<http://snomed.info/id/272099008> <http://snomed.info/id/362981000>)
+
+# Class: <http://snomed.info/id/272103003> (Time patterns (qualifier value))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/272103003> "Time patterns")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/272103003> "Time patterns (qualifier value)")
+SubClassOf(<http://snomed.info/id/272103003> <http://snomed.info/id/272099008>)
+
+# Class: <http://snomed.info/id/272104009> (Absolute times (qualifier value))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/272104009> "Absolute times")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/272104009> "Absolute times (qualifier value)")
+SubClassOf(<http://snomed.info/id/272104009> <http://snomed.info/id/272103003>)
+
+# Class: <http://snomed.info/id/272106006> (Temporal periods of day (qualifier value))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/272106006> "Temporal periods of day")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/272106006> "Times of day")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/272106006> "Temporal periods of day (qualifier value)")
+SubClassOf(<http://snomed.info/id/272106006> <http://snomed.info/id/307142001>)
+
+# Class: <http://snomed.info/id/276755008> (Right atrial pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276755008> "Right atrial pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/276755008> "RA - Right atrial pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/276755008> "RAP - Right atrial pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276755008> "Right atrial pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/276755008> <http://snomed.info/id/251068006>)
+
+# Class: <http://snomed.info/id/276756009> (Right ventricular pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276756009> "Right ventricular pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/276756009> "RV - Right ventricular pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/276756009> "RVP - Right ventricular pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276756009> "Right ventricular pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/276756009> <http://snomed.info/id/251069003>)
+
+# Class: <http://snomed.info/id/276760007> (Left atrial pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276760007> "Left atrial pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/276760007> "LA - Left atrial pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/276760007> "LAP - Left atrial pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276760007> "Left atrial pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/276760007> <http://snomed.info/id/251068006>)
+
+# Class: <http://snomed.info/id/276762004> (Direct left atrial pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276762004> "Direct left atrial pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/276762004> "LA - Direct left atrial pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276762004> "Direct left atrial pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/276762004> <http://snomed.info/id/276760007>)
+
+# Class: <http://snomed.info/id/276763009> (Mean wedge pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276763009> "Mean wedge pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/276763009> "Indirect mean left atrial pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276763009> "Mean wedge pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/276763009> <http://snomed.info/id/118433006>)
+
+# Class: <http://snomed.info/id/276764003> (Wedge pressure - a wave (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276764003> "Wedge pressure - a wave")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276764003> "Wedge pressure - a wave (observable entity)")
+SubClassOf(<http://snomed.info/id/276764003> <http://snomed.info/id/118433006>)
+
+# Class: <http://snomed.info/id/276765002> (Wedge pressure - x trough (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276765002> "Wedge pressure - x trough")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276765002> "Wedge pressure - x trough (observable entity)")
+SubClassOf(<http://snomed.info/id/276765002> <http://snomed.info/id/118433006>)
+
+# Class: <http://snomed.info/id/276766001> (Wedge pressure - v wave (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276766001> "Wedge pressure - v wave")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276766001> "Wedge pressure - v wave (observable entity)")
+SubClassOf(<http://snomed.info/id/276766001> <http://snomed.info/id/118433006>)
+
+# Class: <http://snomed.info/id/276767005> (Wedge pressure - y trough (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276767005> "Wedge pressure - y trough")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276767005> "Wedge pressure - y trough (observable entity)")
+SubClassOf(<http://snomed.info/id/276767005> <http://snomed.info/id/118433006>)
+
+# Class: <http://snomed.info/id/276769008> (Left ventricular pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276769008> "Left ventricular pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/276769008> "LV - Left ventricular pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276769008> "Left ventricular pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/276769008> <http://snomed.info/id/251069003>)
+
+# Class: <http://snomed.info/id/276772001> (Right ventricular systolic pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276772001> "Right ventricular systolic pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276772001> "Right ventricular systolic pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/276772001> <http://snomed.info/id/276756009>)
+
+# Class: <http://snomed.info/id/276773006> (Right ventricular diastolic pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276773006> "Right ventricular diastolic pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276773006> "Right ventricular diastolic pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/276773006> <http://snomed.info/id/276756009>)
+
+# Class: <http://snomed.info/id/276774000> (Right ventricular end-diastolic pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276774000> "Right ventricular end-diastolic pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/276774000> "RVEDP - Right ventricular end-diastolic pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276774000> "Right ventricular end-diastolic pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/276774000> <http://snomed.info/id/276756009>)
+
+# Class: <http://snomed.info/id/276775004> (Mean right atrial pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276775004> "Mean right atrial pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276775004> "Mean right atrial pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/276775004> <http://snomed.info/id/276755008>)
+
+# Class: <http://snomed.info/id/276776003> (Right atrial pressure - a wave (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276776003> "Right atrial pressure - a wave")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276776003> "Right atrial pressure - a wave (observable entity)")
+SubClassOf(<http://snomed.info/id/276776003> <http://snomed.info/id/276755008>)
+
+# Class: <http://snomed.info/id/276777007> (Right atrial pressure - x trough (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276777007> "Right atrial pressure - x trough")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276777007> "Right atrial pressure - x trough (observable entity)")
+SubClassOf(<http://snomed.info/id/276777007> <http://snomed.info/id/276755008>)
+
+# Class: <http://snomed.info/id/276778002> (Right atrial pressure - v wave (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276778002> "Right atrial pressure - v wave")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276778002> "Right atrial pressure - v wave (observable entity)")
+SubClassOf(<http://snomed.info/id/276778002> <http://snomed.info/id/276755008>)
+
+# Class: <http://snomed.info/id/276779005> (Right atrial pressure - y trough (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276779005> "Right atrial pressure - y trough")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276779005> "Right atrial pressure - y trough (observable entity)")
+SubClassOf(<http://snomed.info/id/276779005> <http://snomed.info/id/276755008>)
+
+# Class: <http://snomed.info/id/276780008> (Left ventricular systolic pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276780008> "Left ventricular systolic pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276780008> "Left ventricular systolic pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/276780008> <http://snomed.info/id/276769008>)
+
+# Class: <http://snomed.info/id/276781007> (Left ventricular end-diastolic pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276781007> "Left ventricular end-diastolic pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/276781007> "LVEDP - Left ventricular end-diastolic pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276781007> "Left ventricular end-diastolic pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/276781007> <http://snomed.info/id/276769008>)
+
+# Class: <http://snomed.info/id/276783005> (Mean direct left atrial pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276783005> "Mean direct left atrial pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276783005> "Mean direct left atrial pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/276783005> <http://snomed.info/id/276762004>)
+
+# Class: <http://snomed.info/id/276784004> (Direct left atrial pressure - a wave (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276784004> "Direct left atrial pressure - a wave")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276784004> "Direct left atrial pressure - a wave (observable entity)")
+SubClassOf(<http://snomed.info/id/276784004> <http://snomed.info/id/276762004>)
+
+# Class: <http://snomed.info/id/276785003> (Direct left atrial pressure - x trough (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276785003> "Direct left atrial pressure - x trough")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276785003> "Direct left atrial pressure - x trough (observable entity)")
+SubClassOf(<http://snomed.info/id/276785003> <http://snomed.info/id/276762004>)
+
+# Class: <http://snomed.info/id/276786002> (Direct left atrial pressure - v wave (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276786002> "Direct left atrial pressure - v wave")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276786002> "Direct left atrial pressure - v wave (observable entity)")
+SubClassOf(<http://snomed.info/id/276786002> <http://snomed.info/id/276762004>)
+
+# Class: <http://snomed.info/id/276788001> (Direct left atrial pressure - y trough (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/276788001> "Direct left atrial pressure - y trough")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276788001> "Direct left atrial pressure - y trough (observable entity)")
+SubClassOf(<http://snomed.info/id/276788001> <http://snomed.info/id/276762004>)
+
+# Class: <http://snomed.info/id/277712000> (Cardiac internal structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/277712000> "Cardiac internal structure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/277712000> "Cardiac internal structure (body structure)")
+SubClassOf(<http://snomed.info/id/277712000> <http://snomed.info/id/119202000>)
+
+# Class: <http://snomed.info/id/27832009> (Structure of thoracic viscus (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/27832009> "Structure of thoracic viscus")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/27832009> "Thoracic viscus")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/27832009> "Structure of thoracic viscus (body structure)")
+SubClassOf(<http://snomed.info/id/27832009> ObjectIntersectionOf(<http://snomed.info/id/362937008> <http://snomed.info/id/699593001>))
+
+# Class: <http://snomed.info/id/28017001> (Daytime (qualifier value))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/28017001> "Daytime")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/28017001> "Diurnal")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/28017001> "Daytime (qualifier value)")
+SubClassOf(<http://snomed.info/id/28017001> ObjectIntersectionOf(<http://snomed.info/id/272106006> <http://snomed.info/id/7389001>))
+
+# Class: <http://snomed.info/id/281157001> (Systemic vascular structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/281157001> "Systemic vascular structure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/281157001> "Systemic vascular structure (body structure)")
+SubClassOf(<http://snomed.info/id/281157001> <http://snomed.info/id/59820001>)
+
+# Class: <http://snomed.info/id/281158006> (Pulmonary vascular structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/281158006> "Pulmonary vascular structure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/281158006> "Pulmonary vascular structure (body structure)")
+SubClassOf(<http://snomed.info/id/281158006> ObjectIntersectionOf(<http://snomed.info/id/20139000> <http://snomed.info/id/304062003> <http://snomed.info/id/363536003>))
+
+# Class: <http://snomed.info/id/281159003> (Systemic arterial structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/281159003> "Systemic arterial structure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/281159003> "Systemic arterial structure (body structure)")
+SubClassOf(<http://snomed.info/id/281159003> ObjectIntersectionOf(<http://snomed.info/id/281157001> <http://snomed.info/id/51114001>))
+
+# Class: <http://snomed.info/id/281232002> (Vascular structure of head and/or neck (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/281232002> "Vascular structure of head and/or neck")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/281232002> "Vascular structure of head and neck")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/281232002> "Vascular structure of head and/or neck (body structure)")
+SubClassOf(<http://snomed.info/id/281232002> ObjectIntersectionOf(<http://snomed.info/id/306954006> <http://snomed.info/id/774007>))
+
+# Class: <http://snomed.info/id/281233007> (Cardiovascular structure of trunk (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/281233007> "Cardiovascular structure of trunk")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/281233007> "Cardiovascular structure of trunk (body structure)")
+SubClassOf(<http://snomed.info/id/281233007> ObjectIntersectionOf(<http://snomed.info/id/22943007> <http://snomed.info/id/281827007>))
+
+# Class: <http://snomed.info/id/281238003> (Vascular structure of lower limb (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/281238003> "Vascular structure of lower limb")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/281238003> "Vascular structure of lower limb (body structure)")
+SubClassOf(<http://snomed.info/id/281238003> ObjectIntersectionOf(<http://snomed.info/id/120575009> <http://snomed.info/id/281828002>))
+
+# Class: <http://snomed.info/id/281467004> (Intrathoracic cardiovascular structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/281467004> "Intrathoracic cardiovascular structure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/281467004> "Intrathoracic cardiovascular structure (body structure)")
+SubClassOf(<http://snomed.info/id/281467004> ObjectIntersectionOf(<http://snomed.info/id/281233007> <http://snomed.info/id/699593001>))
+
+# Class: <http://snomed.info/id/281480001> (Structure of systemic vein of trunk (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/281480001> "Structure of systemic vein of trunk")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/281480001> "Systemic vein of trunk")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/281480001> "Structure of systemic vein of trunk (body structure)")
+SubClassOf(<http://snomed.info/id/281480001> ObjectIntersectionOf(<http://snomed.info/id/102299009> <http://snomed.info/id/360592004>))
+
+# Class: <http://snomed.info/id/281586009> (Special atomic mapping values (qualifier value))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/281586009> "Special atomic mapping values")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/281586009> "Special atomic mapping values (qualifier value)")
+SubClassOf(<http://snomed.info/id/281586009> <http://snomed.info/id/362981000>)
+
+# Class: <http://snomed.info/id/281827007> (Regional cardiovascular structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/281827007> "Regional cardiovascular structure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/281827007> "Regional cardiovascular structure (body structure)")
+SubClassOf(<http://snomed.info/id/281827007> <http://snomed.info/id/113257007>)
+
+# Class: <http://snomed.info/id/281828002> (Vascular structure of limb (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/281828002> "Vascular structure of limb")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/281828002> "Vascular structure of limb (body structure)")
+SubClassOf(<http://snomed.info/id/281828002> ObjectIntersectionOf(<http://snomed.info/id/306954006> <http://snomed.info/id/51833009> <http://snomed.info/id/66019005>))
+
+# Class: <http://snomed.info/id/29092000> (Venous structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/29092000> "Venous structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/29092000> "Vein")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/29092000> "Venous structure (body structure)")
+SubClassOf(<http://snomed.info/id/29092000> ObjectIntersectionOf(<http://snomed.info/id/119553000> <http://snomed.info/id/59820001>))
+
+# Class: <http://snomed.info/id/30021000> (Lower leg structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/30021000> "Lower leg structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/30021000> "Crural region")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/30021000> "Leg")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/30021000> "Lower leg")
+AnnotationAssertion(field:TextDefinition.term <http://snomed.info/id/30021000> "Lower extremity from knee to ankle")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/30021000> "Lower leg structure (body structure)")
+SubClassOf(<http://snomed.info/id/30021000> ObjectIntersectionOf(<http://snomed.info/id/120575009> <http://snomed.info/id/699617006>))
+
+# Class: <http://snomed.info/id/303102005> (Special disorder atoms (qualifier value))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/303102005> "Special disorder atoms")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/303102005> "Special disorder atoms (qualifier value)")
+SubClassOf(<http://snomed.info/id/303102005> <http://snomed.info/id/281586009>)
+
+# Class: <http://snomed.info/id/303340002> (Face and/or neck structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/303340002> "Face and/or neck structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/303340002> "Face and neck structure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/303340002> "Face and/or neck structure (body structure)")
+SubClassOf(<http://snomed.info/id/303340002> <http://snomed.info/id/774007>)
+
+# Class: <http://snomed.info/id/304061005> (Vascular structure of neck (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/304061005> "Vascular structure of neck")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/304061005> "Vascular structure of neck (body structure)")
+SubClassOf(<http://snomed.info/id/304061005> ObjectIntersectionOf(<http://snomed.info/id/281232002> <http://snomed.info/id/45048000>))
+
+# Class: <http://snomed.info/id/304062003> (Intrathoracic vascular structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/304062003> "Intrathoracic vascular structure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/304062003> "Intrathoracic vascular structure (body structure)")
+SubClassOf(<http://snomed.info/id/304062003> ObjectIntersectionOf(<http://snomed.info/id/281467004> <http://snomed.info/id/306955007>))
+
+# Class: <http://snomed.info/id/306954006> (Regional vascular structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/306954006> "Regional vascular structure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/306954006> "Regional vascular structure (body structure)")
+SubClassOf(<http://snomed.info/id/306954006> ObjectIntersectionOf(<http://snomed.info/id/281827007> <http://snomed.info/id/59820001>))
+
+# Class: <http://snomed.info/id/306955007> (Vascular structure of trunk (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/306955007> "Vascular structure of trunk")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/306955007> "Vascular structure of trunk (body structure)")
+SubClassOf(<http://snomed.info/id/306955007> ObjectIntersectionOf(<http://snomed.info/id/281233007> <http://snomed.info/id/306954006>))
+
+# Class: <http://snomed.info/id/307142001> (Temporal periods (qualifier value))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/307142001> "Temporal periods")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/307142001> "Temporal periods (qualifier value)")
+SubClassOf(<http://snomed.info/id/307142001> ObjectIntersectionOf(<http://snomed.info/id/272103003> <http://snomed.info/id/303102005>))
+
+# Class: <http://snomed.info/id/308734009> (Artery of trunk (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/308734009> "Artery of trunk")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/308734009> "Artery of trunk (body structure)")
+SubClassOf(<http://snomed.info/id/308734009> ObjectIntersectionOf(<http://snomed.info/id/306955007> <http://snomed.info/id/51114001>))
+
+# Class: <http://snomed.info/id/310611001> (Cardiovascular measure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/310611001> "Cardiovascular measure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/310611001> "Cardiovascular measurement")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/310611001> "Cardiovascular measurement - observation")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/310611001> "Cardiovascular measure (observable entity)")
+SubClassOf(<http://snomed.info/id/310611001> <http://snomed.info/id/364066008>)
+
+# Class: <http://snomed.info/id/310612008> (Cardiac measure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/310612008> "Cardiac measure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/310612008> "Cardiac measurement")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/310612008> "Cardiac measure (observable entity)")
+SubClassOf(<http://snomed.info/id/310612008> <http://snomed.info/id/310611001>)
+
+# Class: <http://snomed.info/id/310787001> (Structure of lung and/or mediastinum (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/310787001> "Structure of lung and/or mediastinum")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/310787001> "Lung and mediastinal structures")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/310787001> "Lung and/or mediastinal structures")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/310787001> "Structure of lung and/or mediastinum (body structure)")
+SubClassOf(<http://snomed.info/id/310787001> <http://snomed.info/id/91689009>)
+
+# Class: <http://snomed.info/id/310886004> (Absolute times - hours (qualifier value))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/310886004> "Absolute times - hours")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/310886004> "Absolute times - hours (qualifier value)")
+SubClassOf(<http://snomed.info/id/310886004> <http://snomed.info/id/272104009>)
+
+# Class: <http://snomed.info/id/312333002> (Distal lower limb artery (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/312333002> "Distal lower limb artery")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/312333002> "Distal lower limb artery (body structure)")
+SubClassOf(<http://snomed.info/id/312333002> <http://snomed.info/id/70791007>)
+
+# Class: <http://snomed.info/id/312419003> (Structure of respiratory system and/or intrathoracic structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/312419003> "Structure of respiratory system and/or intrathoracic structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/312419003> "Respiratory and intrathoracic structures")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/312419003> "Respiratory and/or intrathoracic structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/312419003> "Respiratory and/or intrathoracic structures")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/312419003> "Structure of respiratory system and/or intrathoracic structure (body structure)")
+SubClassOf(<http://snomed.info/id/312419003> <http://snomed.info/id/91689009>)
+
+# Class: <http://snomed.info/id/314235006> (Type of vein (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314235006> "Type of vein")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314235006> "Type of vein (body structure)")
+SubClassOf(<http://snomed.info/id/314235006> <http://snomed.info/id/29092000>)
+
+# Class: <http://snomed.info/id/314237003> (Type of vessel (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314237003> "Type of vessel")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314237003> "Type of vessel (body structure)")
+SubClassOf(<http://snomed.info/id/314237003> <http://snomed.info/id/59820001>)
+
+# Class: <http://snomed.info/id/314357001> (Branch of popliteal artery (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314357001> "Branch of popliteal artery")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314357001> "Branch of popliteal artery (body structure)")
+SubClassOf(<http://snomed.info/id/314357001> <http://snomed.info/id/312333002>)
+
+# Class: <http://snomed.info/id/314362000> (Branch of anterior tibial artery (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314362000> "Branch of anterior tibial artery")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314362000> "Branch of anterior tibial artery (body structure)")
+SubClassOf(<http://snomed.info/id/314362000> <http://snomed.info/id/312333002>)
+
+# Class: <http://snomed.info/id/314438006> (Minimum systolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314438006> "Minimum systolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314438006> "Minimum systolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314438006> <http://snomed.info/id/271649006>)
+
+# Class: <http://snomed.info/id/314439003> (Maximum systolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314439003> "Maximum systolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314439003> "Maximum systolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314439003> <http://snomed.info/id/271649006>)
+
+# Class: <http://snomed.info/id/314440001> (Average systolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314440001> "Average systolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314440001> "Average systolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314440001> <http://snomed.info/id/271649006>)
+
+# Class: <http://snomed.info/id/314441002> (Minimum day interval systolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314441002> "Minimum day interval systolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314441002> "Minimum day interval systolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314441002> <http://snomed.info/id/314438006>)
+
+# Class: <http://snomed.info/id/314442009> (Minimum night interval systolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314442009> "Minimum night interval systolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314442009> "Minimum night interval systolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314442009> <http://snomed.info/id/314438006>)
+
+# Class: <http://snomed.info/id/314443004> (Maximum night interval systolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314443004> "Maximum night interval systolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314443004> "Maximum night interval systolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314443004> <http://snomed.info/id/314439003>)
+
+# Class: <http://snomed.info/id/314444005> (Maximum day interval systolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314444005> "Maximum day interval systolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314444005> "Maximum day interval systolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314444005> <http://snomed.info/id/314439003>)
+
+# Class: <http://snomed.info/id/314445006> (Average night interval systolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314445006> "Average night interval systolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314445006> "Average night interval systolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314445006> <http://snomed.info/id/314440001>)
+
+# Class: <http://snomed.info/id/314446007> (Average day interval systolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314446007> "Average day interval systolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314446007> "Average day interval systolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314446007> <http://snomed.info/id/314440001>)
+
+# Class: <http://snomed.info/id/314448008> (Maximum 24 hour systolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314448008> "Maximum 24 hour systolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314448008> "Maximum 24 hour systolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314448008> <http://snomed.info/id/314439003>)
+
+# Class: <http://snomed.info/id/314449000> (Average 24 hour systolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314449000> "Average 24 hour systolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314449000> "Average 24 hour systolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314449000> <http://snomed.info/id/314440001>)
+
+# Class: <http://snomed.info/id/314451001> (Minimum diastolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314451001> "Minimum diastolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314451001> "Minimum diastolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314451001> <http://snomed.info/id/271650006>)
+
+# Class: <http://snomed.info/id/314452008> (Maximum diastolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314452008> "Maximum diastolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314452008> "Maximum diastolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314452008> <http://snomed.info/id/271650006>)
+
+# Class: <http://snomed.info/id/314453003> (Average diastolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314453003> "Average diastolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314453003> "Average diastolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314453003> <http://snomed.info/id/271650006>)
+
+# Class: <http://snomed.info/id/314454009> (Minimum day interval diastolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314454009> "Minimum day interval diastolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314454009> "Minimum day interval diastolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314454009> <http://snomed.info/id/314451001>)
+
+# Class: <http://snomed.info/id/314455005> (Minimum night interval diastolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314455005> "Minimum night interval diastolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314455005> "Minimum night interval diastolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314455005> <http://snomed.info/id/314451001>)
+
+# Class: <http://snomed.info/id/314456006> (Minimum 24 hour diastolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314456006> "Minimum 24 hour diastolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314456006> "Minimum 24 hour diastolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314456006> <http://snomed.info/id/314451001>)
+
+# Class: <http://snomed.info/id/314457002> (Maximum night interval diastolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314457002> "Maximum night interval diastolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314457002> "Maximum night interval diastolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314457002> <http://snomed.info/id/314452008>)
+
+# Class: <http://snomed.info/id/314458007> (Maximum day interval diastolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314458007> "Maximum day interval diastolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314458007> "Maximum day interval diastolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314458007> <http://snomed.info/id/314452008>)
+
+# Class: <http://snomed.info/id/314459004> (Maximum 24 hour diastolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314459004> "Maximum 24 hour diastolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314459004> "Maximum 24 hour diastolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314459004> <http://snomed.info/id/314452008>)
+
+# Class: <http://snomed.info/id/314460009> (Average night interval diastolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314460009> "Average night interval diastolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314460009> "Average night interval diastolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314460009> <http://snomed.info/id/314453003>)
+
+# Class: <http://snomed.info/id/314461008> (Average day interval diastolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314461008> "Average day interval diastolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314461008> "Average day interval diastolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314461008> <http://snomed.info/id/314453003>)
+
+# Class: <http://snomed.info/id/314462001> (Average 24 hour diastolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314462001> "Average 24 hour diastolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314462001> "Average 24 hour diastolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314462001> <http://snomed.info/id/314453003>)
+
+# Class: <http://snomed.info/id/314463006> (24 hour blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314463006> "24 hour blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314463006> "24 hour blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314463006> <http://snomed.info/id/75367002>)
+
+# Class: <http://snomed.info/id/314464000> (24 hour systolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314464000> "24 hour systolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314464000> "24 hour systolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314464000> <http://snomed.info/id/314463006>)
+
+# Class: <http://snomed.info/id/314465004> (24 hour diastolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/314465004> "24 hour diastolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/314465004> "24 hour diastolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/314465004> ObjectIntersectionOf(<http://snomed.info/id/271650006> <http://snomed.info/id/314463006>))
+
+# Class: <http://snomed.info/id/315612005> (Target systolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/315612005> "Target systolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/315612005> "Target systolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/315612005> <http://snomed.info/id/271649006>)
+
+# Class: <http://snomed.info/id/315613000> (Target diastolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/315613000> "Target diastolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/315613000> "Target diastolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/315613000> <http://snomed.info/id/271650006>)
+
+# Class: <http://snomed.info/id/32530005> (Structure of inferior bulb of internal jugular vein (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/32530005> "Structure of inferior bulb of internal jugular vein")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/32530005> "Inferior bulb of internal jugular vein")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/32530005> "Structure of inferior bulb of internal jugular vein (body structure)")
+SubClassOf(<http://snomed.info/id/32530005> ObjectIntersectionOf(<http://snomed.info/id/119206002> <http://snomed.info/id/12123001>))
+
+# Class: <http://snomed.info/id/33586001> (Sitting position (finding))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/33586001> "Sitting position")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/33586001> "Sitting")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/33586001> "Sitting position (finding)")
+SubClassOf(<http://snomed.info/id/33586001> <http://snomed.info/id/9851009>)
+
+# Class: <http://snomed.info/id/33858002> (Structure of muscular type vein (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/33858002> "Structure of muscular type vein")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/33858002> "Large vein")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/33858002> "Muscular type vein")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/33858002> "Structure of muscular type vein (body structure)")
+SubClassOf(<http://snomed.info/id/33858002> ObjectIntersectionOf(<http://snomed.info/id/314235006> <http://snomed.info/id/42586008>))
+
+# Class: <http://snomed.info/id/35532006> (Vena caval structure (body structure) )
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/35532006> "Vena caval structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/35532006> "Vena cava")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/35532006> "Vena caval structure (body structure)")
+SubClassOf(<http://snomed.info/id/35532006> ObjectIntersectionOf(<http://snomed.info/id/281480001> <http://snomed.info/id/33858002> <http://snomed.info/id/3711007>))
+
+# Class: <http://snomed.info/id/360592004> (Systemic venous structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/360592004> "Systemic venous structure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/360592004> "Systemic venous structure (body structure)")
+SubClassOf(<http://snomed.info/id/360592004> <http://snomed.info/id/29092000>)
+
+# Class: <http://snomed.info/id/360593009> (Structure of tributary of right atrium (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/360593009> "Tributary of right atrium")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/360593009> "Structure of tributary of right atrium")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/360593009> "Structure of tributary of right atrium (body structure)")
+SubClassOf(<http://snomed.info/id/360593009> <http://snomed.info/id/360592004>)
+
+# Class: <http://snomed.info/id/360601005> (Structure of tributary of superior vena cava (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/360601005> "Tributary of superior vena cava")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/360601005> "Structure of tributary of superior vena cava")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/360601005> "Structure of tributary of superior vena cava (body structure)")
+SubClassOf(<http://snomed.info/id/360601005> <http://snomed.info/id/360593009>)
+
+# Class: <http://snomed.info/id/360612005> (Structure of tributary of brachiocephalic vein (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/360612005> "Tributary of brachiocephalic vein")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/360612005> "Structure of tributary of brachiocephalic vein")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/360612005> "Structure of tributary of brachiocephalic vein (body structure)")
+SubClassOf(<http://snomed.info/id/360612005> <http://snomed.info/id/360601005>)
+
+# Class: <http://snomed.info/id/362937008> (Structure of viscus (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/362937008> "Structure of viscus")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/362937008> "Structure of viscus (body structure)")
+SubClassOf(<http://snomed.info/id/362937008> <http://snomed.info/id/113343008>)
+
+# Class: <http://snomed.info/id/362981000> (Qualifier value (qualifier value))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/362981000> "Qualifier value")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/362981000> "Qualifier value (qualifier value)")
+SubClassOf(<http://snomed.info/id/362981000> <http://snomed.info/id/138875005>)
+
+# Class: <http://snomed.info/id/363536003> (Pulmonary structure including vessels and lymphoid tissue (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/363536003> "Pulmonary structure including vessels and lymphoid tissue")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/363536003> "Pulmonary structure including vessels and lymphoid tissue (body structure)")
+SubClassOf(<http://snomed.info/id/363536003> <http://snomed.info/id/310787001>)
+
+# Class: <http://snomed.info/id/363787002> (Observable entity (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/363787002> "Observable entity")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/363787002> "Observable entity (observable entity)")
+SubClassOf(<http://snomed.info/id/363787002> <http://snomed.info/id/138875005>)
+
+# Class: <http://snomed.info/id/363788007> (Clinical history/examination observable (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/363788007> "Clinical history/examination observable")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/363788007> "Clinical history/examination observable (observable entity)")
+SubClassOf(<http://snomed.info/id/363788007> <http://snomed.info/id/363787002>)
+
+# Class: <http://snomed.info/id/363789004> (General characteristic of patient (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/363789004> "General characteristic of patient")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/363789004> "General characteristic of patient (observable entity)")
+SubClassOf(<http://snomed.info/id/363789004> <http://snomed.info/id/363788007>)
+
+# Class: <http://snomed.info/id/363790008> (General characteristic of appearance (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/363790008> "General characteristic of appearance")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/363790008> "General characteristic of appearance (observable entity)")
+SubClassOf(<http://snomed.info/id/363790008> <http://snomed.info/id/363789004>)
+
+# Class: <http://snomed.info/id/364066008> (Cardiovascular observable (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/364066008> "Cardiovascular observable")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/364066008> "Cardiovascular observable (observable entity)")
+SubClassOf(<http://snomed.info/id/364066008> <http://snomed.info/id/363788007>)
+
+# Class: <http://snomed.info/id/364087003> (Blood vessel feature (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/364087003> "Blood vessel feature")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/364087003> "Blood vessel feature (observable entity)")
+SubClassOf(<http://snomed.info/id/364087003> <http://snomed.info/id/364066008>)
+
+# Class: <http://snomed.info/id/364088008> (Arterial feature (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/364088008> "Arterial feature")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/364088008> "Arterial feature (observable entity)")
+SubClassOf(<http://snomed.info/id/364088008> <http://snomed.info/id/364087003>)
+
+# Class: <http://snomed.info/id/364089000> (Systemic arterial feature (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/364089000> "Systemic arterial feature")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/364089000> "Systemic arterial feature (observable entity)")
+SubClassOf(<http://snomed.info/id/364089000> <http://snomed.info/id/364088008>)
+
+# Class: <http://snomed.info/id/364090009> (Systemic arterial pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/364090009> "Systemic arterial pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/364090009> "SAP - Systemic arterial pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/364090009> "Systemic arterial pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/364090009> ObjectIntersectionOf(<http://snomed.info/id/364089000> <http://snomed.info/id/386536003>))
+
+# Class: <http://snomed.info/id/364830008> (Finding of position of body and posture (finding))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/364830008> "Position of body and posture - finding")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/364830008> "Finding of position of body and posture")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/364830008> "Finding of position of body and posture (finding)")
+EquivalentClasses(<http://snomed.info/id/364830008> ObjectIntersectionOf(<http://snomed.info/id/250171008> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectSomeValuesFrom(<http://snomed.info/id/363714003> <http://snomed.info/id/271605009>))))
+
+# Class: <http://snomed.info/id/37087001> (Arterial wedge pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/37087001> "Arterial wedge pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/37087001> "Arterial wedge pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/37087001> <http://snomed.info/id/75367002>)
+
+# Class: <http://snomed.info/id/3711007> (Structure of great blood vessel (organ) (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/3711007> "Structure of great blood vessel (organ)")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/3711007> "Great blood vessel (organ)")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/3711007> "Great vessel")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/3711007> "Structure of great blood vessel (organ) (body structure)")
+SubClassOf(<http://snomed.info/id/3711007> <http://snomed.info/id/314237003>)
+
+# Class: <http://snomed.info/id/371829003> (Pulmonary vein wedge pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/371829003> "Pulmonary vein wedge pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/371829003> "Pulmonary vein wedge pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/371829003> <http://snomed.info/id/76882007>)
+
+# Class: <http://snomed.info/id/371830008> (Pulmonary vein mean wedge pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/371830008> "Pulmonary vein mean wedge pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/371830008> "Pulmonary vein mean wedge pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/371830008> <http://snomed.info/id/371829003>)
+
+# Class: <http://snomed.info/id/371831007> (Pulmonary vein wedge pressure - v wave (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/371831007> "Pulmonary vein wedge pressure - v wave")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/371831007> "Pulmonary vein wedge pressure - v wave (observable entity)")
+SubClassOf(<http://snomed.info/id/371831007> <http://snomed.info/id/371829003>)
+
+# Class: <http://snomed.info/id/371832000> (Pulmonary vein wedge pressure - y trough (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/371832000> "Pulmonary vein wedge pressure - y trough")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/371832000> "Pulmonary vein wedge pressure - y trough (observable entity)")
+SubClassOf(<http://snomed.info/id/371832000> <http://snomed.info/id/371829003>)
+
+# Class: <http://snomed.info/id/371833005> (Pulmonary vein wedge pressure - x trough (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/371833005> "Pulmonary vein wedge pressure - x trough")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/371833005> "Pulmonary vein wedge pressure - x trough (observable entity)")
+SubClassOf(<http://snomed.info/id/371833005> <http://snomed.info/id/371829003>)
+
+# Class: <http://snomed.info/id/371834004> (Pulmonary vein wedge pressure - a wave (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/371834004> "Pulmonary vein wedge pressure - a wave")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/371834004> "Pulmonary vein wedge pressure - a wave (observable entity)")
+SubClassOf(<http://snomed.info/id/371834004> <http://snomed.info/id/371829003>)
+
+# Class: <http://snomed.info/id/37476000> (Jugular venous pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/37476000> "Jugular venous pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/37476000> "JVP - Jugular venous pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/37476000> "Jugular venous pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/37476000> <http://snomed.info/id/71420008>)
+
+# Class: <http://snomed.info/id/386532001> (Invasive arterial pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/386532001> "Invasive arterial pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/386532001> "Invasive arterial pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/386532001> ObjectIntersectionOf(<http://snomed.info/id/386533006> <http://snomed.info/id/386534000>))
+
+# Class: <http://snomed.info/id/386533006> (Invasive blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/386533006> "Invasive blood pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/386533006> "IBP - Invasive blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/386533006> "Invasive blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/386533006> <http://snomed.info/id/75367002>)
+
+# Class: <http://snomed.info/id/386534000> (Arterial blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/386534000> "Arterial blood pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/386534000> "ABP - Arterial blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/386534000> "Arterial blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/386534000> ObjectIntersectionOf(<http://snomed.info/id/252060001> <http://snomed.info/id/75367002>))
+
+# Class: <http://snomed.info/id/386536003> (Systemic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/386536003> "Systemic blood pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/386536003> "SBP - Systemic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/386536003> "Systemic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/386536003> <http://snomed.info/id/75367002>)
+
+# Class: <http://snomed.info/id/38809004> (Structure of vein of thorax (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/38809004> "Structure of vein of thorax")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/38809004> "Thoracic vein")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/38809004> "Vein of thorax")
+AnnotationAssertion(field:TextDefinition.term <http://snomed.info/id/38809004> "Vein located within the thorax")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/38809004> "Structure of vein of thorax (body structure)")
+SubClassOf(<http://snomed.info/id/38809004> ObjectIntersectionOf(<http://snomed.info/id/102299009> <http://snomed.info/id/51185008>))
+
+# Class: <http://snomed.info/id/38866009> (Body part structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/38866009> "Body part structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/38866009> "Anatomic part")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/38866009> "Body part")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/38866009> "Body part structure (body structure)")
+SubClassOf(<http://snomed.info/id/38866009> <http://snomed.info/id/52530000>)
+
+# Class: <http://snomed.info/id/39499005> (Structure of artery of thorax AND/OR abdomen (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/39499005> "Structure of artery of thorax AND/OR abdomen")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/39499005> "Artery of thorax AND/OR abdomen")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/39499005> "Structure of artery of thorax AND/OR abdomen (body structure)")
+SubClassOf(<http://snomed.info/id/39499005> <http://snomed.info/id/308734009>)
+
+# Class: <http://snomed.info/id/396277003> (Fluid observable (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/396277003> "Fluid observable")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/396277003> "Fluid observable (observable entity)")
+SubClassOf(<http://snomed.info/id/396277003> <http://snomed.info/id/414237002>)
+
+# Class: <http://snomed.info/id/399023006> (Right ventricular peak systolic pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/399023006> "Right ventricular peak systolic pressure")
+AnnotationAssertion(field:TextDefinition.term <http://snomed.info/id/399023006> "Right ventricular systolic pressure calculated from the peak right ventricular-right atrial systolic gradient (from the peak tricuspid regurgitation velocity using the modified Bernoulli equation) plus estimated right atrial/central venous pressure.")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/399023006> "Right ventricular peak systolic pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/399023006> <http://snomed.info/id/276756009>)
+
+# Class: <http://snomed.info/id/399304008> (Systolic blood pressure on admission (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/399304008> "Systolic blood pressure on admission")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/399304008> "Systolic blood pressure on admission (observable entity)")
+SubClassOf(<http://snomed.info/id/399304008> <http://snomed.info/id/271649006>)
+
+# Class: <http://snomed.info/id/399913000> (Scalp and/or neck structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/399913000> "Scalp and/or neck structure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/399913000> "Scalp and/or neck structure (body structure)")
+SubClassOf(<http://snomed.info/id/399913000> <http://snomed.info/id/774007>)
+
+# Class: <http://snomed.info/id/400974009> (Standing systolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/400974009> "Standing systolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/400974009> "Standing systolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/400974009> <http://snomed.info/id/271649006>)
+
+# Class: <http://snomed.info/id/400975005> (Standing diastolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/400975005> "Standing diastolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/400975005> "Standing diastolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/400975005> <http://snomed.info/id/271650006>)
+
+# Class: <http://snomed.info/id/404684003> (Clinical finding (finding))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/404684003> "Clinical finding")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/404684003> "Clinical finding (finding)")
+SubClassOf(<http://snomed.info/id/404684003> <http://snomed.info/id/138875005>)
+
+# Class: <http://snomed.info/id/407554009> (Sitting systolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/407554009> "Sitting systolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/407554009> "Sitting systolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/407554009> ObjectIntersectionOf(<http://snomed.info/id/163035008> <http://snomed.info/id/271649006>))
+
+# Class: <http://snomed.info/id/407555005> (Sitting diastolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/407555005> "Sitting diastolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/407555005> "Sitting diastolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/407555005> ObjectIntersectionOf(<http://snomed.info/id/163035008> <http://snomed.info/id/271650006>))
+
+# Class: <http://snomed.info/id/407556006> (Lying systolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/407556006> "Lying systolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/407556006> "Lying systolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/407556006> <http://snomed.info/id/271649006>)
+
+# Class: <http://snomed.info/id/407557002> (Lying diastolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/407557002> "Lying diastolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/407557002> "Lying diastolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/407557002> <http://snomed.info/id/271650006>)
+
+# Class: <http://snomed.info/id/409708007> (Heart AND pericardium structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/409708007> "Heart AND pericardium structure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/409708007> "Heart AND pericardium structure (body structure)")
+SubClassOf(<http://snomed.info/id/409708007> ObjectIntersectionOf(<http://snomed.info/id/281467004> <http://snomed.info/id/72410000>))
+
+# Class: <http://snomed.info/id/413605002> (Average home diastolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/413605002> "Average home diastolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/413605002> "Average home diastolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/413605002> <http://snomed.info/id/314453003>)
+
+# Class: <http://snomed.info/id/413606001> (Average home systolic blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/413606001> "Average home systolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/413606001> "Average home systolic blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/413606001> <http://snomed.info/id/314440001>)
+
+# Class: <http://snomed.info/id/414237002> (Feature of entity (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/414237002> "Feature of entity")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/414237002> "Quality of entity")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/414237002> "Feature of entity (observable entity)")
+SubClassOf(<http://snomed.info/id/414237002> <http://snomed.info/id/363787002>)
+
+# Class: <http://snomed.info/id/4146003> (Structure of artery of extremity (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/4146003> "Structure of artery of extremity")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/4146003> "Artery of extremity")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/4146003> "Structure of artery of extremity (body structure)")
+SubClassOf(<http://snomed.info/id/4146003> ObjectIntersectionOf(<http://snomed.info/id/281828002> <http://snomed.info/id/473450006>))
+
+# Class: <http://snomed.info/id/416152001> (Neck and/or chest and/or abdomen structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/416152001> "Neck, chest and abdomen")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/416152001> "Neck and/or chest and/or abdomen structure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/416152001> "Neck and/or chest and/or abdomen structure (body structure)")
+SubClassOf(<http://snomed.info/id/416152001> <http://snomed.info/id/416319003>)
+
+# Class: <http://snomed.info/id/416319003> (Neck and/or chest and/or abdomen and/or pelvis (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/416319003> "Neck, chest, abdomen, and pelvis")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/416319003> "Neck and/or chest and/or abdomen and/or pelvis")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/416319003> "Neck and/or chest and/or abdomen and/or pelvis (body structure)")
+SubClassOf(<http://snomed.info/id/416319003> <http://snomed.info/id/52530000>)
+
+# Class: <http://snomed.info/id/416550000> (Chest and/or abdomen structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/416550000> "Chest and abdomen")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/416550000> "Chest and/or abdomen structure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/416550000> "Chest and/or abdomen structure (body structure)")
+SubClassOf(<http://snomed.info/id/416550000> ObjectIntersectionOf(<http://snomed.info/id/416152001> <http://snomed.info/id/416775004>))
+
+# Class: <http://snomed.info/id/416631005> (Pelvis and/or lower extremity structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/416631005> "Pelvis and lower extremities")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/416631005> "Pelvis and/or lower extremity structure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/416631005> "Pelvis and/or lower extremity structure (body structure)")
+SubClassOf(<http://snomed.info/id/416631005> <http://snomed.info/id/69548008>)
+
+# Class: <http://snomed.info/id/416775004> (Chest and/or abdomen and/or pelvis structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/416775004> "Chest, abdomen, and pelvis")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/416775004> "Chest and/or abdomen and/or pelvis structure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/416775004> "Chest and/or abdomen and/or pelvis structure (body structure)")
+SubClassOf(<http://snomed.info/id/416775004> <http://snomed.info/id/52530000>)
+
+# Class: <http://snomed.info/id/417437006> (Neck and/or chest structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/417437006> "Neck and chest")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/417437006> "Neck and/or chest structure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/417437006> "Neck and/or chest structure (body structure)")
+SubClassOf(<http://snomed.info/id/417437006> <http://snomed.info/id/416152001>)
+
+# Class: <http://snomed.info/id/419605007> (Structure of ankle and/or foot (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/419605007> "Structure of ankle and/or foot")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/419605007> "Structure of ankle and/or foot (body structure)")
+SubClassOf(<http://snomed.info/id/419605007> <http://snomed.info/id/699617006>)
+
+# Class: <http://snomed.info/id/420473002> (Structure of subregion of trunk (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/420473002> "Structure of subregion of trunk")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/420473002> "Structure of subregion of trunk (body structure)")
+SubClassOf(<http://snomed.info/id/420473002> <http://snomed.info/id/22943007>)
+
+# Class: <http://snomed.info/id/421466002> (Structure of peripheral vein (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/421466002> "Structure of peripheral vein")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/421466002> "Structure of peripheral vein (body structure)")
+SubClassOf(<http://snomed.info/id/421466002> ObjectIntersectionOf(<http://snomed.info/id/360592004> <http://snomed.info/id/51833009>))
+
+# Class: <http://snomed.info/id/42586008> (Large blood vessel structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/42586008> "Large blood vessel structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/42586008> "Large vessel")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/42586008> "Large vessels")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/42586008> "Large blood vessel structure (body structure)")
+SubClassOf(<http://snomed.info/id/42586008> <http://snomed.info/id/314237003>)
+
+# Class: <http://snomed.info/id/430757002> (Structure of pulmonary vein great vessel (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/430757002> "Structure of pulmonary vein great vessel")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/430757002> "Structure of pulmonary vein great vessel (body structure)")
+SubClassOf(<http://snomed.info/id/430757002> <http://snomed.info/id/122972007>)
+
+# Class: <http://snomed.info/id/442083009> (Anatomical or acquired body structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/442083009> "Anatomical or acquired body structure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/442083009> "Anatomical or acquired body structure (body structure)")
+SubClassOf(<http://snomed.info/id/442083009> <http://snomed.info/id/123037004>)
+
+# Class: <http://snomed.info/id/445731001> (Dorsalis pedis arterial pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/445731001> "Dorsalis pedis arterial pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/445731001> "Dorsalis pedis arterial pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/445731001> <http://snomed.info/id/386534000>)
+
+# Class: <http://snomed.info/id/445886006> (Posterior tibial arterial pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/445886006> "Posterior tibial arterial pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/445886006> "Posterior tibial arterial pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/445886006> <http://snomed.info/id/75367002>)
+
+# Class: <http://snomed.info/id/446226005> (Diastolic blood pressure on admission (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/446226005> "Diastolic blood pressure on admission")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/446226005> "Diastolic blood pressure on admission (observable entity)")
+SubClassOf(<http://snomed.info/id/446226005> <http://snomed.info/id/271650006>)
+
+# Class: <http://snomed.info/id/446841001> (Ankle brachial pressure index (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/446841001> "Ankle brachial pressure index")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/446841001> "Ankle brachial pressure index (observable entity)")
+SubClassOf(<http://snomed.info/id/446841001> <http://snomed.info/id/75367002>)
+
+# Class: <http://snomed.info/id/45048000> (Neck structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/45048000> "Neck structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/45048000> "Neck")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/45048000> "Neck structure (body structure)")
+SubClassOf(<http://snomed.info/id/45048000> ObjectIntersectionOf(<http://snomed.info/id/303340002> <http://snomed.info/id/399913000> <http://snomed.info/id/417437006>))
+
+# Class: <http://snomed.info/id/46680005> (Vital sign (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/46680005> "Vital signs")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/46680005> "Vital sign")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/46680005> "Vital sign (observable entity)")
+SubClassOf(<http://snomed.info/id/46680005> <http://snomed.info/id/363787002>)
+
+# Class: <http://snomed.info/id/473448003> (Non-coronary systemic artery structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/473448003> "Non-coronary systemic artery structure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/473448003> "Non-coronary systemic artery structure (body structure)")
+EquivalentClasses(<http://snomed.info/id/473448003> ObjectIntersectionOf(<http://snomed.info/id/281159003> <http://snomed.info/id/51833009>))
+
+# Class: <http://snomed.info/id/473450006> (Non-coronary non-aorta systemic artery structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/473450006> "Non-coronary non-aorta systemic artery structure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/473450006> "Non-coronary non-aorta systemic artery structure (body structure)")
+SubClassOf(<http://snomed.info/id/473450006> <http://snomed.info/id/473448003>)
+
+# Class: <http://snomed.info/id/480000> (Cardiopulmonary circulatory system structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/480000> "Cardiopulmonary circulatory system structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/480000> "Cardiopulmonary circulatory system")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/480000> "Lesser circulation")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/480000> "Cardiopulmonary circulatory system structure (body structure)")
+SubClassOf(<http://snomed.info/id/480000> <http://snomed.info/id/113257007>)
+
+# Class: <http://snomed.info/id/51114001> (Arterial structure (body structure) )
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/51114001> "Arterial structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/51114001> "Artery")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/51114001> "Arterial structure (body structure)")
+SubClassOf(<http://snomed.info/id/51114001> ObjectIntersectionOf(<http://snomed.info/id/11527006> <http://snomed.info/id/59820001>))
+
+# Class: <http://snomed.info/id/51185008> (Thoracic structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/51185008> "Thoracic structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/51185008> "Chest")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/51185008> "Thorax")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/51185008> "Thoracic structure (body structure)")
+SubClassOf(<http://snomed.info/id/51185008> ObjectIntersectionOf(<http://snomed.info/id/416550000> <http://snomed.info/id/417437006> <http://snomed.info/id/67734004> <http://snomed.info/id/70104002>))
+
+# Class: <http://snomed.info/id/51833009> (Peripheral vascular system structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/51833009> "Peripheral vascular system structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/51833009> "Peripheral vascular system")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/51833009> "Peripheral vascular system structure (body structure)")
+SubClassOf(<http://snomed.info/id/51833009> <http://snomed.info/id/51840005>)
+
+# Class: <http://snomed.info/id/51840005> (Systemic circulatory system structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/51840005> "Systemic circulatory system structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/51840005> "Greater circulation")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/51840005> "Systemic circulatory system")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/51840005> "Systemic circulatory system structure (body structure)")
+SubClassOf(<http://snomed.info/id/51840005> <http://snomed.info/id/113257007>)
+
+# Class: <http://snomed.info/id/52530000> (Body region structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/52530000> "Body region structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/52530000> "Anatomic region")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/52530000> "Body region")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/52530000> "Topographic region")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/52530000> "Body region structure (body structure)")
+SubClassOf(<http://snomed.info/id/52530000> <http://snomed.info/id/91723000>)
+
+# Class: <http://snomed.info/id/53085002> (Right ventricular structure (body structure) )
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/53085002> "Right ventricular structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/53085002> "Right ventricle")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/53085002> "Right ventricular structure (body structure)")
+SubClassOf(<http://snomed.info/id/53085002> ObjectIntersectionOf(<http://snomed.info/id/21814001> <http://snomed.info/id/79561009>))
+
+# Class: <http://snomed.info/id/56459004> (Foot structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/56459004> "Foot structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/56459004> "Foot")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/56459004> "Foot structure (body structure)")
+SubClassOf(<http://snomed.info/id/56459004> <http://snomed.info/id/419605007>)
+
+# Class: <http://snomed.info/id/59652004> (Atrial structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/59652004> "Atrial structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/59652004> "Atrium")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/59652004> "Cardiac atrium")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/59652004> "Atrial structure (body structure)")
+SubClassOf(<http://snomed.info/id/59652004> <http://snomed.info/id/91744000>)
+
+# Class: <http://snomed.info/id/59820001> (Blood vessel structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/59820001> "Blood vessel structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/59820001> "Blood vessel")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/59820001> "Vascular structure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/59820001> "Blood vessel structure (body structure)")
+SubClassOf(<http://snomed.info/id/59820001> ObjectIntersectionOf(<http://snomed.info/id/113257007> <http://snomed.info/id/113343008> <http://snomed.info/id/87784001>))
+
+# Class: <http://snomed.info/id/61685007> (Lower limb structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/61685007> "Lower limb structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/61685007> "Leg")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/61685007> "Lower extremity")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/61685007> "Lower extremity structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/61685007> "Lower limb")
+AnnotationAssertion(field:TextDefinition.term <http://snomed.info/id/61685007> "Lower extremity, including hip, thigh, leg, ankle, and foot")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/61685007> "Lower limb structure (body structure)")
+SubClassOf(<http://snomed.info/id/61685007> ObjectIntersectionOf(<http://snomed.info/id/416631005> <http://snomed.info/id/66019005>))
+
+# Class: <http://snomed.info/id/63190004> (Structure of jugular vein (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/63190004> "Structure of jugular vein")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/63190004> "Jugular vein")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/63190004> "Structure of jugular vein (body structure)")
+SubClassOf(<http://snomed.info/id/63190004> <http://snomed.info/id/82121006>)
+
+# Class: <http://snomed.info/id/64401006> (Structure of venous portion of cardiopulmonary circulatory system (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/64401006> "Structure of venous portion of cardiopulmonary circulatory system")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/64401006> "Many or all pulmonary veins")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/64401006> "Venous portion of cardiopulmonary circulatory system")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/64401006> "Structure of venous portion of cardiopulmonary circulatory system (body structure)")
+SubClassOf(<http://snomed.info/id/64401006> ObjectIntersectionOf(<http://snomed.info/id/119553000> <http://snomed.info/id/480000>))
+
+# Class: <http://snomed.info/id/66019005> (Limb structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/66019005> "Limb structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/66019005> "Extremity")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/66019005> "Limb")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/66019005> "Limb structure (body structure)")
+SubClassOf(<http://snomed.info/id/66019005> <http://snomed.info/id/38866009>)
+
+# Class: <http://snomed.info/id/67734004> (Upper trunk structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/67734004> "Upper trunk structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/67734004> "Structure of thoracic segment of trunk")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/67734004> "Upper trunk")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/67734004> "Upper trunk structure (body structure)")
+SubClassOf(<http://snomed.info/id/67734004> <http://snomed.info/id/420473002>)
+
+# Class: <http://snomed.info/id/6797001> (Mean blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/6797001> "Mean blood pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/6797001> "MAP - Mean arterial pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/6797001> "MBP - Mean blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/6797001> "Mean blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/6797001> <http://snomed.info/id/75367002>)
+
+# Class: <http://snomed.info/id/69548008> (Lower body part structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/69548008> "Lower body part structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/69548008> "Lower body part")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/69548008> "Lower body part structure (body structure)")
+SubClassOf(<http://snomed.info/id/69548008> <http://snomed.info/id/128263001>)
+
+# Class: <http://snomed.info/id/699589007> (Structure of anatomical cluster (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/699589007> "Structure of anatomical cluster")
+AnnotationAssertion(field:TextDefinition.term <http://snomed.info/id/699589007> "Anatomical structure which has as its parts a heterogeneous collection of organs, organ parts, cells, cell parts or body part subdivisions that are adjacent to, or continuous with one another; does not constitute a cell part, cell, tissue, organ, or body part subdivision.")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/699589007> "Structure of anatomical cluster (body structure)")
+SubClassOf(<http://snomed.info/id/699589007> <http://snomed.info/id/91723000>)
+
+# Class: <http://snomed.info/id/699590003> (Structure of anatomical compartment (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/699590003> "Structure of anatomical compartment")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/699590003> "Structure of anatomical compartment (body structure)")
+SubClassOf(<http://snomed.info/id/699590003> <http://snomed.info/id/699589007>)
+
+# Class: <http://snomed.info/id/699593001> (Structure of compartment of thorax (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/699593001> "Structure of compartment of thorax")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/699593001> "Structure of compartment of thorax (body structure)")
+SubClassOf(<http://snomed.info/id/699593001> ObjectIntersectionOf(<http://snomed.info/id/51185008> <http://snomed.info/id/91829005>))
+
+# Class: <http://snomed.info/id/699617006> (Structure of free lower limb (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/699617006> "Structure of free lower limb")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/699617006> "Structure of free lower limb (body structure)")
+SubClassOf(<http://snomed.info/id/699617006> <http://snomed.info/id/127951001>)
+
+# Class: <http://snomed.info/id/70104002> (Upper body part structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/70104002> "Upper body part structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/70104002> "Upper body part")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/70104002> "Upper body part structure (body structure)")
+SubClassOf(<http://snomed.info/id/70104002> <http://snomed.info/id/128262006>)
+
+# Class: <http://snomed.info/id/70791007> (Structure of artery of lower extremity (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/70791007> "Structure of artery of lower extremity")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/70791007> "Artery of lower extremity")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/70791007> "Structure of artery of lower extremity (body structure)")
+SubClassOf(<http://snomed.info/id/70791007> ObjectIntersectionOf(<http://snomed.info/id/281238003> <http://snomed.info/id/4146003>))
+
+# Class: <http://snomed.info/id/71420008> (Central venous pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/71420008> "Central venous pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/71420008> "CVP - Central venous pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/71420008> "Central venous pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/71420008> <http://snomed.info/id/252076005>)
+
+# Class: <http://snomed.info/id/72313002> (Systolic arterial pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/72313002> "Systolic arterial pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/72313002> "Systolic blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/72313002> "Systolic arterial pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/72313002> <http://snomed.info/id/271649006>)
+
+# Class: <http://snomed.info/id/72410000> (Mediastinal structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/72410000> "Mediastinal structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/72410000> "Mediastinum")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/72410000> "Structure of mediastinum")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/72410000> "Mediastinal structure (body structure)")
+SubClassOf(<http://snomed.info/id/72410000> ObjectIntersectionOf(<http://snomed.info/id/310787001> <http://snomed.info/id/699593001>))
+
+# Class: <http://snomed.info/id/73829009> (Right atrial structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/73829009> "Right atrial structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/73829009> "Right atrium")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/73829009> "Right atrial structure (body structure)")
+SubClassOf(<http://snomed.info/id/73829009> ObjectIntersectionOf(<http://snomed.info/id/59652004> <http://snomed.info/id/79561009>))
+
+# Class: <http://snomed.info/id/7389001> (Time frame (qualifier value))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/7389001> "Time frame")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/7389001> "Time frame (qualifier value)")
+SubClassOf(<http://snomed.info/id/7389001> <http://snomed.info/id/362981000>)
+
+# Class: <http://snomed.info/id/75367002> (Blood pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/75367002> "Blood pressure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/75367002> "BP - Blood pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/75367002> "Blood pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/75367002> ObjectIntersectionOf(<http://snomed.info/id/252059006> <http://snomed.info/id/46680005> <http://snomed.info/id/79996001>))
+
+# Class: <http://snomed.info/id/76882007> (Venous wedge pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/76882007> "Venous wedge pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/76882007> "Venous wedge pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/76882007> <http://snomed.info/id/252076005>)
+
+# Class: <http://snomed.info/id/774007> (Head and neck structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/774007> "Head and neck structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/774007> "Head and neck")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/774007> "Head and neck region")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/774007> "Head and neck structure (body structure)")
+SubClassOf(<http://snomed.info/id/774007> <http://snomed.info/id/70104002>)
+
+# Class: <http://snomed.info/id/79561009> (Structure of right side of heart (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/79561009> "Structure of right side of heart")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/79561009> "Right side of heart")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/79561009> "Structure of right side of heart (body structure)")
+SubClassOf(<http://snomed.info/id/79561009> <http://snomed.info/id/91744000>)
+
+# Class: <http://snomed.info/id/79996001> (Fluid pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/79996001> "Fluid pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/79996001> "Fluid pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/79996001> <http://snomed.info/id/396277003>)
+
+# Class: <http://snomed.info/id/80891009> (Heart structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/80891009> "Heart structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/80891009> "Cardiac structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/80891009> "Heart")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/80891009> "Heart structure (body structure)")
+SubClassOf(<http://snomed.info/id/80891009> ObjectIntersectionOf(<http://snomed.info/id/27832009> <http://snomed.info/id/409708007>))
+
+# Class: <http://snomed.info/id/81040000> (Pulmonary artery structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/81040000> "Pulmonary artery structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/81040000> "Pulmonary artery")
+AnnotationAssertion(field:TextDefinition.term <http://snomed.info/id/81040000> "Includes pulmonary trunk, left and right main pulmonary arteries, and all their branches")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/81040000> "Pulmonary artery structure (body structure)")
+SubClassOf(<http://snomed.info/id/81040000> ObjectIntersectionOf(<http://snomed.info/id/118633002> <http://snomed.info/id/281158006> <http://snomed.info/id/3711007>))
+
+# Class: <http://snomed.info/id/82121006> (Structure of vein of neck (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/82121006> "Structure of vein of neck")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/82121006> "Cervical vein")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/82121006> "Vein of neck")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/82121006> "Structure of vein of neck (body structure)")
+SubClassOf(<http://snomed.info/id/82121006> ObjectIntersectionOf(<http://snomed.info/id/244390008> <http://snomed.info/id/304061005>))
+
+# Class: <http://snomed.info/id/82471001> (Left atrial structure (body structure) )
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/82471001> "Left atrial structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/82471001> "Left atrium")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/82471001> "Left atrial structure (body structure)")
+SubClassOf(<http://snomed.info/id/82471001> ObjectIntersectionOf(<http://snomed.info/id/17398003> <http://snomed.info/id/59652004>))
+
+# Class: <http://snomed.info/id/85756007> (Body tissue structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/85756007> "Body tissue structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/85756007> "Body tissue")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/85756007> "Tissue")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/85756007> "Body tissue structure (body structure)")
+SubClassOf(<http://snomed.info/id/85756007> <http://snomed.info/id/91723000>)
+
+# Class: <http://snomed.info/id/86547008> (Structure of dorsalis pedis artery (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/86547008> "Structure of dorsalis pedis artery")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/86547008> "Dorsalis pedis artery")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/86547008> "Structure of dorsalis pedis artery (body structure)")
+SubClassOf(<http://snomed.info/id/86547008> ObjectIntersectionOf(<http://snomed.info/id/244339007> <http://snomed.info/id/314362000>))
+
+# Class: <http://snomed.info/id/87179004> (Arterial pulse pressure (observable entity))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/87179004> "Arterial pulse pressure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/87179004> "Arterial pulse pressure (observable entity)")
+SubClassOf(<http://snomed.info/id/87179004> <http://snomed.info/id/75367002>)
+
+# Class: <http://snomed.info/id/87784001> (Soft tissues (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/87784001> "Soft tissues")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/87784001> "Soft tissues (body structure)")
+SubClassOf(<http://snomed.info/id/87784001> <http://snomed.info/id/85756007>)
+
+# Class: <http://snomed.info/id/87878005> (Left ventricular structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/87878005> "Left ventricular structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/87878005> "Left ventricle")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/87878005> "Left ventricular structure (body structure)")
+SubClassOf(<http://snomed.info/id/87878005> ObjectIntersectionOf(<http://snomed.info/id/17398003> <http://snomed.info/id/21814001>))
+
+# Class: <http://snomed.info/id/91689009> (Body system structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/91689009> "Body system structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/91689009> "Organ system")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/91689009> "Body system structure (body structure)")
+SubClassOf(<http://snomed.info/id/91689009> <http://snomed.info/id/91723000>)
+
+# Class: <http://snomed.info/id/91717005> (Organ part (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/91717005> "Organ part")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/91717005> "Organ part (body structure)")
+SubClassOf(<http://snomed.info/id/91717005> <http://snomed.info/id/113343008>)
+
+# Class: <http://snomed.info/id/91723000> (Anatomical structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/91723000> "Anatomical structure")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/91723000> "Anatomical structure (body structure)")
+SubClassOf(<http://snomed.info/id/91723000> <http://snomed.info/id/442083009>)
+
+# Class: <http://snomed.info/id/91744000> (Cardiac chamber structure (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/91744000> "Cardiac chamber structure")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/91744000> "Cardiac chamber")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/91744000> "Cardiac chamber structure (body structure)")
+SubClassOf(<http://snomed.info/id/91744000> <http://snomed.info/id/277712000>)
+
+# Class: <http://snomed.info/id/91829005> (Structure of body compartment (body structure))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/91829005> "Structure of body compartment")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/91829005> "Body compartment")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/91829005> "Structure of body compartment (body structure)")
+SubClassOf(<http://snomed.info/id/91829005> ObjectIntersectionOf(<http://snomed.info/id/22943007> <http://snomed.info/id/699590003>))
+
+# Class: <http://snomed.info/id/9851009> (Body position finding (finding))
+
+AnnotationAssertion(field:Description.term.en-us.preferred <http://snomed.info/id/9851009> "Body position finding")
+AnnotationAssertion(field:Description.term.en-us.synonym <http://snomed.info/id/9851009> "Posture")
+AnnotationAssertion(rdfs:label <http://snomed.info/id/9851009> "Body position finding (finding)")
+SubClassOf(<http://snomed.info/id/9851009> <http://snomed.info/id/364830008>)
+
+
+)

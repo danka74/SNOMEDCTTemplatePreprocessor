@@ -63,8 +63,10 @@ public class SNOMEDCTTemplatePreprocessor {
 				HashMap<String, String> set = new HashMap<String, String>();
 				int length = items.length;
 				for (int i = 0; i < length; i++) {
-					if (!items[i].isEmpty())
-						set.put(headers[i], items[i]);
+					String[] parts = items[i].split(";");
+					for (int j = 0; j < parts.length; j++)
+						if (!parts[j].isEmpty())
+							set.put(headers[i], parts[j]);
 				}
 
 				table.add(set);
