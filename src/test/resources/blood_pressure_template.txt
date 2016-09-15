@@ -1,0 +1,11 @@
+( #<[[ [1..1] @definiendum ]]#> )
+#<[[@primitive]]#>
+( #<[[ [1..2] @genus ]]#> :
+	#< 704318007 | Property type (attribute) | = [[ [0..1] @property_type ]], #>
+	#< 704319004 | Inheres in (attribute) | = [[ [0..1] @inheres_in ]], #>
+	#< 704321009 | Characterizes (attribute) | = [[ [0..1] @characterizes ]], #>
+	#< 704326004 | Precondition (attribute) | = [[ [0..1] @precondition ]], #>
+	#< 370134009 | Time aspect (attribute) | = [[ [0..1] @time_aspect ]], #>
+	#< 246501002 | Technique (attribute) | = [[ [0..1] @technique ]], #>
+	#< 704327008 | Direct site (attribute) | = [[ [0..1] @direct_site ]] #> 
+)
