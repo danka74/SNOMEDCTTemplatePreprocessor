@@ -90,6 +90,8 @@ public class SNOMEDCTTemplatePreprocessor {
 	 * @param args[1]	a template file
 	 * @param args[2]	a tab separated file with variable names in the first line
 	 * 
+	 * outputs result of template instatiation to System.out
+	 * 
 	 * @throws Exception
 	 */
 	public static void main(String[] args) throws Exception {
@@ -100,10 +102,13 @@ public class SNOMEDCTTemplatePreprocessor {
 		File templateFile = new File(args[0]);
 		File dataFile = new File(args[1]);
 		
+		// read data from dataFile
 		List<HashMap<String, String>> data = readCSV(dataFile);
 		
+		// read entire templateFile into template string
 		String template = new Scanner(templateFile).useDelimiter("\\Z").next();
 
+		// for all rows in the data file
 		for (HashMap<String, String> set : data) {
 
 			StringReader reader = new StringReader(template);
@@ -112,17 +117,18 @@ public class SNOMEDCTTemplatePreprocessor {
 
 			try {
 				// create stack of StringBuilder for the different scope blocks
-				// in
-				// the template
+				// in the template
 				Deque<StringBuilder> scopeBlockTextStack = new LinkedList<StringBuilder>();
 
 				// push a new StringBuilder for the outermost block
 				scopeBlockTextStack.push(new StringBuilder());
 
 				int level = 0; // keep track of level, for debugging mostly...
+				
+				// read one character
 				int character = reader.read();
 				while (true) {
-					if (character == -1)
+					if (character == -1) // end of file
 						break;
 
 					switch (character) {
