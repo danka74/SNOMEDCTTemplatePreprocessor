@@ -87,71 +87,22 @@ public class SNOMEDCTTemplatePreprocessor {
 	}
 
 	/**
-	 * @param args
+	 * @param args[1]	a template file
+	 * @param args[2]	a tab separated file with variable names in the first line
+	 * 
 	 * @throws Exception
 	 */
 	public static void main(String[] args) throws Exception {
 
-		List<HashMap<String, String>> data = readCSV(new File(
-				"src/test/resources/blood_pressure_v3.csv"));
-
-		// HashMap<String, String> set1 = new HashMap<String, String>();
-		// set1.put("variable1", "658778|concept2|");
-		// set1.put("variable2", "84758475|concept3|");
-		// variableLUT.add(set1);
-		//
-		// String[] examples = {
-		// "123567|concept1|#<:{ 847857|attribute1|= [[ @variableX ]]#<, 823781|attribute2|= [[ [1..1] @variable2 ]] #>}#>",
-		// // variableX
-		// // not
-		// // present
-		// "123567|concept1|:#<#<{ 847857|attribute1|= [[ @variable1 ]], 823781|attribute2|= [[ @variable2 ]]}#>#>",
-		// "123567|concept1|:#<{ 847857|attribute1|= [[ @variable1 ]]#<, 823781|attribute2|= [[ @variable2 ]]#>}#>",
-		// "123567|concept1|:#<{ 847857|attribute1|= [[ @variable1 ]]#<, 823781|attribute2|= [[ [0..0] @variable2 ]]#>}#>",
-		// // wrong
-		// // cardinality
-		// "123567|concept1|:#<{ 847857|attribute1|= [[ @variable1 ]], 823781|attribute2|= [[ @variable2 ]]#>}#>",
-		// // missing
-		// // scope
-		// // start
-		// "123567|concept1|:#<#<{ 847857|attribute1|= [[ @variable1 ]], 823781|attribute2|= @variable2 #>}#>",
-		// // missing
-		// // slot
-		// "123567|concept1|:#<{ 847857|attribute1|= [[ @variable1 ]]#<, 823781|attribute2|= [[ @variableX ]]#>}#>"
-		// }; // variableX
-		// // not
-		// // present
-
-		/*
-		  
-		// 
-		// [[ @definiendum ]] 
-		// 
-		( #<[[ @definiendum ]]#> )
-		#<[[@primitive]]#>
-		( #<[[ @genus ]]#> :
-			#< 704318007 | Property type (attribute) | = [[ @property_type ]], #>
-			#< 704319004 | Inheres in (attribute) | = [[ @inheres_in ]], #>
-			#< 704321009 | Characterizes (attribute) | = [[ @characterizes ]], #>
-			#< 704326004 | Precondition (attribute) | = [[ @precondition ]], #>
-			#< 370134009 | Time aspect (attribute) | = [[ @time_aspect ]], #>
-			#< 246501002 | Technique (attribute) | = [[ @technique ]], #>
-			#< 704327008 | Direct site (attribute) | = [[ @direct_site ]] #> )
-		 
-		 */
-		String template = "//\n"
-				+ "// #<[[ @definiendum ]]#>\n"
-				+ "//\n"
-				+ "( #<[[ @definiendum ]]#> )\n"
-				+ "#<[[@primitive]]#>\n"
-				+ "( #<[[ @genus ]] #> :\n"
-				+ "	#< 704318007 | Property type (attribute) | = [[ @property_type ]], #>\n"
-				+ "	#< 704319004 | Inheres in (attribute) | = [[ @inheres_in ]], #>\n"
-				+ "	#< 704321009 | Characterizes (attribute) | = [[ @characterizes ]], #>\n"
-				+ "	#< 704326004 | Precondition (attribute) | = [[ @precondition ]], #>\n"
-				+ "	#< 370134009 | Time aspect (attribute) | = [[ @time_aspect ]], #>\n"
-				+ "	#< 246501002 | Technique (attribute) | = [[ @technique ]], #>\n"
-				+ "	#< 704327008 | Direct site (attribute) | = [[ @direct_site ]], #> )";
+		if(args.length != 2)
+			return;
+		
+		File templateFile = new File(args[0]);
+		File dataFile = new File(args[1]);
+		
+		List<HashMap<String, String>> data = readCSV(dataFile);
+		
+		String template = new Scanner(templateFile).useDelimiter("\\Z").next();
 
 		for (HashMap<String, String> set : data) {
 
