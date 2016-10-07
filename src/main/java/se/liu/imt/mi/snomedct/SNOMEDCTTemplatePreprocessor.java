@@ -38,26 +38,19 @@ import se.liu.imt.mi.snomedct.expression.SlotParserBaseVisitor;
  */
 public class SNOMEDCTTemplatePreprocessor {
 
-	/**
-	 * 
-	 */
-	public SNOMEDCTTemplatePreprocessor() {
-		// TODO Auto-generated constructor stub
-	}
 
-	public static List<HashMap<String, String>> readCSV(File input) {
+	public static List<HashMap<String, String>> readCSV(Reader input) {
 
 		List<HashMap<String, String>> table = new LinkedList<HashMap<String, String>>();
 
 		try {
-			BufferedReader inputReader = new BufferedReader(new FileReader(
-					input));
+			BufferedReader inputReader = new BufferedReader(input);
 
 			// read headers
 			String headers[] = inputReader.readLine().split("\t");
 
-			String line;
-			while ((line = inputReader.readLine()) != null) {
+			String line = inputReader.readLine();
+			while (line != null) {
 				String[] items = line.split("\t");
 
 				HashMap<String, String> set = new HashMap<String, String>();
@@ -70,6 +63,8 @@ public class SNOMEDCTTemplatePreprocessor {
 				}
 
 				table.add(set);
+				
+				line = inputReader.readLine();
 			}
 
 		} catch (FileNotFoundException e) {
@@ -86,34 +81,16 @@ public class SNOMEDCTTemplatePreprocessor {
 
 	}
 
-	/**
-	 * @param args[1]	a template file
-	 * @param args[2]	a tab separated file with variable names in the first line
-	 * 
-	 * outputs result of template instatiation to System.out
-	 * 
-	 * @throws Exception
-	 */
-	public static void main(String[] args) throws Exception {
+	public static String instantiate(String template, List<HashMap<String, String>> data) {
 
-		if(args.length != 2)
-			return;
+		StringWriter writer = new StringWriter();
 		
-		File templateFile = new File(args[0]);
-		File dataFile = new File(args[1]);
-		
-		// read data from dataFile
-		List<HashMap<String, String>> data = readCSV(dataFile);
-		
-		// read entire templateFile into template string
-		String template = new Scanner(templateFile).useDelimiter("\\Z").next();
-
 		// for all rows in the data file
 		for (HashMap<String, String> set : data) {
 
 			StringReader reader = new StringReader(template);
 
-			System.out.println("//\n// INPUT: " + set);
+			writer.write("//\n// INPUT: " + set.toString() + "\n");
 
 			try {
 				// create stack of StringBuilder for the different scope blocks
@@ -124,7 +101,7 @@ public class SNOMEDCTTemplatePreprocessor {
 				scopeBlockTextStack.push(new StringBuilder());
 
 				int level = 0; // keep track of level, for debugging mostly...
-				
+
 				// read one character
 				int character = reader.read();
 				while (true) {
@@ -206,8 +183,8 @@ public class SNOMEDCTTemplatePreprocessor {
 										.equals("*"))
 									max = Integer.parseInt(cardinality
 											.getChild(3).getText()); // max is
-																		// child
-																		// no. 3
+								// child
+								// no. 3
 							}
 
 							// look up value(s) of variables/paths
@@ -232,10 +209,10 @@ public class SNOMEDCTTemplatePreprocessor {
 								for (int i = 0; i < noOfValues; i++) {
 									for (int j = 0; j < tree.getChildCount(); j++) {
 										if (j == slotIndex) // this is the slot
-															// corresponding to
-															// this scope:
-															// replace the slot
-															// with the value
+											// corresponding to
+											// this scope:
+											// replace the slot
+											// with the value
 											scopeBlockTextStack.peek().append(
 													value);
 										else {
@@ -251,13 +228,13 @@ public class SNOMEDCTTemplatePreprocessor {
 							break;
 
 						} else
-						// identify scope start '#<'
-						if (character == '<') {
-							// push a new Stringbuilder for the new scope block
-							level++;
-							scopeBlockTextStack.push(new StringBuilder());
-							break;
-						}
+							// identify scope start '#<'
+							if (character == '<') {
+								// push a new Stringbuilder for the new scope block
+								level++;
+								scopeBlockTextStack.push(new StringBuilder());
+								break;
+							}
 						// write the consumed character and continue
 						scopeBlockTextStack.peek().append((char) prevCharacter);
 						continue;
@@ -278,12 +255,44 @@ public class SNOMEDCTTemplatePreprocessor {
 
 				output = cleanUpCommas(output);
 
-				System.out.println(output);
+				writer.write(output);
+				writer.write('\n');
 			} catch (Exception e) {
-				System.out.println("// ERROR: " + e.toString());
+				writer.write("// ERROR: " + e.toString() + "\n");
 			}
-			System.out.println();
+			writer.write('\n');
 		}
+
+		return writer.toString();
+
+	}
+
+	/**
+	 * @param args[1]	a template file
+	 * @param args[2]	a tab separated file with variable names in the first line
+	 * 
+	 * outputs result of template instatiation to System.out
+	 * 
+	 * @throws Exception
+	 */
+	public static void main(String[] args) throws Exception {
+
+		if(args.length != 2)
+			return;
+
+		File templateFile = new File(args[0]);
+		File dataFile = new File(args[1]);
+
+		// read data from dataFile
+		List<HashMap<String, String>> data = readCSV(new FileReader(dataFile));
+
+		// read entire templateFile into template string
+		String template = new Scanner(templateFile).useDelimiter("\\Z").next();
+
+		String result = instantiate(template, data);
+		
+		System.out.println(result);
+
 	}
 
 	private static String cleanUpCommas(String str) {
