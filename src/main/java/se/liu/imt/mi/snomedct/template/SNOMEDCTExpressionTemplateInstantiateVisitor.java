@@ -1,14 +1,9 @@
 package se.liu.imt.mi.snomedct.template;
 
-import java.util.HashMap;
 import java.util.Map;
 
-import org.antlr.v4.runtime.CharStreams;
-import org.antlr.v4.runtime.CodePointCharStream;
-import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.misc.ParseCancellationException;
-import org.antlr.v4.runtime.tree.ParseTree;
 import org.apache.commons.collections4.MultiValuedMap;
 
 import se.liu.imt.mi.snomedct.template.Slot;
@@ -20,8 +15,6 @@ import se.liu.imt.mi.snomedct.template.SNOMEDCTExpressionTemplateParser.ConceptR
 import se.liu.imt.mi.snomedct.template.SNOMEDCTExpressionTemplateParser.FocusConceptContext;
 import se.liu.imt.mi.snomedct.template.SNOMEDCTExpressionTemplateParser.SlotContext;
 import se.liu.imt.mi.snomedct.template.SNOMEDCTExpressionTemplateParser.SubExpressionContext;
-import se.liu.imt.mi.snomedct.template.Slot2Lexer;
-import se.liu.imt.mi.snomedct.template.Slot2Parser;
 
 public class SNOMEDCTExpressionTemplateInstantiateVisitor extends SNOMEDCTExpressionTemplateBaseVisitor<String> {
 
@@ -46,8 +39,8 @@ public class SNOMEDCTExpressionTemplateInstantiateVisitor extends SNOMEDCTExpres
 			SlotContext slotCtx = conceptCtx.getChild(SlotContext.class, 0);
 			if (slotCtx != null) {
 				// there can be many slots in for one list of focus concepts
-				for (Slot slot : slotMap.get(ctx)) {
-					if (slot.getSlotParseRuleContext() == slotCtx) {
+				for (Slot slot : slotMap.get(conceptCtx)) {
+					if (slot.getParseRuleContext() == conceptCtx) {
 						String[] values = data.get(slot.getName()).split(";");
 						if (values.length > slot.getCardinalityMax() || values.length < slot.getCardinalityMin())
 							throw new ParseCancellationException("Cardinality error: " + values.length
@@ -113,7 +106,18 @@ public class SNOMEDCTExpressionTemplateInstantiateVisitor extends SNOMEDCTExpres
 		boolean first = true;
 
 		for (AttributeContext attrCtx : ctx.attribute()) {
-			if (first) {
+			if (slotMap.containsKey(attrCtx)) {
+				Slot attrNameSlot = null;
+				Slot attrValueSlot = null;
+				for (Slot slot : slotMap.get(attrCtx))
+					if (slot.getPosition() == Slot.POSITION_ATTRIBUTE_NAME)
+						attrNameSlot = slot;
+					else if (slot.getPosition() == Slot.POSITION_ATTRIBUTE_VALUE)
+						attrValueSlot = slot;
+				
+				
+
+			} else if (first) {
 				first = false;
 				builder.append(visit(attrCtx));
 			} else {

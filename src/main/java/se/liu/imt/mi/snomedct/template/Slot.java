@@ -44,16 +44,20 @@ public class Slot {
 	int cardinalityMin, cardinalityMax;
 	int scope;
 	int position;
+	public int getPosition() {
+		return position;
+	}
+
 	String constraint;
 	String name;
 	ParserRuleContext instantiateParseCtx;
 	SlotContext slotParseCtx;
 	Set<String> pairs;
 
-	private final static int POSITION_DEF_STATUS = 1;
-	private final static int POSITION_FOCUS_CONCEPT = 2;
-	private final static int POSITION_ATTRIBUTE_NAME = 3;
-	private final static int POSITION_ATTRIBUTE_VALUE = 4;
+	final static int POSITION_DEF_STATUS = 1;
+	final static int POSITION_FOCUS_CONCEPT = 2;
+	final static int POSITION_ATTRIBUTE_NAME = 3;
+	final static int POSITION_ATTRIBUTE_VALUE = 4;
 
 	/**
 	 * @param innerSlotCtx
@@ -62,7 +66,7 @@ public class Slot {
 	Slot(InnerSlotContext innerSlotCtx, SlotContext outerSlotCtx) {
 
 		this.slotParseCtx = outerSlotCtx;
-		
+
 		// find position in parse tree
 		if (outerSlotCtx.getParent().getClass() == DefinitionStatusContext.class) {
 			this.position = Slot.POSITION_DEF_STATUS;
@@ -118,8 +122,8 @@ public class Slot {
 		if (scopeCtx != null) {
 			String scopeName = scopeCtx.getChild(2).getText();
 			int i = 1;
-			for(String name : Slot.SCOPE_NAMES) {
-				if(scopeName.equalsIgnoreCase(name)) {
+			for (String name : Slot.SCOPE_NAMES) {
+				if (scopeName.equalsIgnoreCase(name)) {
 					this.scope = i;
 					break;
 				}
@@ -150,13 +154,13 @@ public class Slot {
 			this.instantiateParseCtx = outerSlotCtx.getParent(); // definitionStatus
 			break;
 		case Slot.POSITION_FOCUS_CONCEPT:
-			this.instantiateParseCtx = outerSlotCtx.getParent().getParent(); // focusConcept
+			this.instantiateParseCtx = outerSlotCtx.getParent(); // conceptReference
 			break;
 		case Slot.POSITION_ATTRIBUTE_NAME:
 		case Slot.POSITION_ATTRIBUTE_VALUE:
 			switch (this.scope) {
 			case Slot.SCOPE_IMMEDIATE:
-				this.instantiateParseCtx = outerSlotCtx.getParent().getParent().getParent(); // attributeSet
+				this.instantiateParseCtx = outerSlotCtx.getParent().getParent().getParent(); // attribute
 				break;
 			case Slot.SCOPE_GROUP:
 				// find group going up the parse tree
@@ -205,7 +209,7 @@ public class Slot {
 	public ParserRuleContext getParseRuleContext() {
 		return instantiateParseCtx;
 	}
-	
+
 	public ParserRuleContext getSlotParseRuleContext() {
 		return slotParseCtx;
 	}
