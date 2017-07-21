@@ -1,6 +1,6 @@
 ( #<[[ [1..1] @definiendum ]]#> )
 #<[[@primitive]]#>
-( #<[[ [1..2] @genus ]]#> :
+( #<[[ [1..2] @genus ]]+#> :
 	#< 704318007 | Property type (attribute) | = [[ [0..1] @property_type ]], #>
 	#< 704319004 | Inheres in (attribute) | = [[ [0..1] @inheres_in ]], #>
 	#< 704321009 | Characterizes (attribute) | = [[ [0..1] @characterizes ]], #>

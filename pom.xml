@@ -10,11 +10,11 @@
 			<plugin>
 				<groupId>org.antlr</groupId>
 				<artifactId>antlr4-maven-plugin</artifactId>
-				<version>4.5.3</version>
+				<version>4.7</version>
 				<configuration>
 					<visitor>true</visitor>
 					<listener>false</listener>
-					<libDirectory>${basedir}/src/main/antlr4/se/liu/imt/mi/snomedct/expression/</libDirectory>
+					<libDirectory>${basedir}/src/main/antlr4/se/liu/imt/mi/snomedct/template/</libDirectory>
 				</configuration>
 				<executions>
 					<execution>
@@ -32,13 +32,35 @@
 					<target>1.7</target>
 				</configuration>
 			</plugin>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+					<archive>
+						<manifest>
+							<mainClass>se.liu.imt.mi.snomedct.SNOMEDCTTemplatePreprocessor</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id> <!-- this is used for inheritance merges -->
+						<phase>package</phase> <!-- bind to the packaging phase -->
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 	<dependencies>
 		<dependency>
 			<groupId>org.antlr</groupId>
 			<artifactId>antlr4-runtime</artifactId>
-			<version>4.5.3</version>
+			<version>4.7</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
@@ -49,6 +71,16 @@
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-csv</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-collections4</artifactId>
+			<version>4.1</version>
 		</dependency>
 	</dependencies>
 </project>

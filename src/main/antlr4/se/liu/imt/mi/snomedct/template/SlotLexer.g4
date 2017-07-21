@@ -1,4 +1,4 @@
-lexer grammar SlotLexer;
+lexer grammar SlotLexer; 
 
 SLOT_START
 :
@@ -7,7 +7,7 @@ SLOT_START
 
 TEXT
 :
-	~[\[]+
+	~[[]+
 ;
 
 mode ISLAND;
