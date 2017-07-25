@@ -210,7 +210,7 @@ public class Slot {
 		return instantiateParseCtx;
 	}
 
-	public ParserRuleContext getSlotParseRuleContext() {
+	public SlotContext getSlotParseRuleContext() {
 		return slotParseCtx;
 	}
 

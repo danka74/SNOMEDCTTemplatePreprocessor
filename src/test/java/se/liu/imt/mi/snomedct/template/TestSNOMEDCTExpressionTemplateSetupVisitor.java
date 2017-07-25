@@ -1,14 +1,11 @@
 /**
  * 
  */
-package se.liu.imt.mi.snomedct;
+package se.liu.imt.mi.snomedct.template;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
-import java.io.StringReader;
 import java.nio.charset.spi.CharsetProvider;
-import java.util.Map;
 
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CharStreams;
@@ -21,18 +18,16 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import se.liu.imt.mi.snomedct.template.SNOMEDCTExpressionTemplateInstantiateVisitor;
 import se.liu.imt.mi.snomedct.template.SNOMEDCTExpressionTemplateLexer;
 import se.liu.imt.mi.snomedct.template.SNOMEDCTExpressionTemplateParser;
 import se.liu.imt.mi.snomedct.template.Slot;
-import se.liu.imt.mi.snomedct.template.TemplateData;
 import se.liu.imt.mi.snomedct.template.SNOMEDCTExpressionTemplateSetupVisitor;
 
 /**
  * @author danka74
  *
  */
-public class TestSNOMEDCTExpressionTemplateInstantiateVisitor {
+public class TestSNOMEDCTExpressionTemplateSetupVisitor {
 
 	/**
 	 * @throws java.lang.Exception
@@ -63,17 +58,14 @@ public class TestSNOMEDCTExpressionTemplateInstantiateVisitor {
 	}
 
 	@Test
-	public void test() throws IOException {
-
-		String dataString = "findingWithExplicitContext\tassociatedFinding\tfindingSite\n" + "123\t345\t853\n" + "789\t456\t28347";
-
+	public void test() {
 		String testExpression = "[[ [1..1] @findingWithExplicitContext ]]:\n"
-				+ " { 246090004 |Associated finding| = ([[ [1..1] @associatedFinding ]]:\n"
+				+ " { 246090004 |Associated finding| = ([[ [0..1] @associatedFinding ]]:\n"
 				+ "{ 246112005 |Severity| = [[ [0..1] @severity]],\n"
-				+ "363698007 |Finding site| = [[ scope=group [1..*] @findingSite]] } ) , \n"
+				+ "363698007 |Finding site| = [[ scope=group [0..*] @findingSite]] } ) , \n"
 				+ "408732007 |Subject relationship context| = 410604004 |Subject of record|,\n"
-				+ "408731000 |Temporal context| = [[ [0..1] @temporalContext ]],\n"
-				+ "408729009 |Finding context| = [[ [0..1] @findingContext ]] }";
+				+ "408731000 |Temporal context| = [[ [1..1] @temporalContext ]],\n"
+				+ "408729009 |Finding context| = [[ [1..1] @findingContext ]] }";
 
 		CodePointCharStream cs = CharStreams.fromString(testExpression);
 		SNOMEDCTExpressionTemplateLexer lexer = new SNOMEDCTExpressionTemplateLexer(cs);
@@ -81,21 +73,10 @@ public class TestSNOMEDCTExpressionTemplateInstantiateVisitor {
 		SNOMEDCTExpressionTemplateParser parser = new SNOMEDCTExpressionTemplateParser(tokens);
 		ParseTree tree = null;
 		tree = parser.expression();
-		SNOMEDCTExpressionTemplateSetupVisitor setUpVisitor = new SNOMEDCTExpressionTemplateSetupVisitor();
-		setUpVisitor.visit(tree);
+		SNOMEDCTExpressionTemplateSetupVisitor visitor = new SNOMEDCTExpressionTemplateSetupVisitor();
+		Slot result = visitor.visit(tree);
 
-		TemplateData data = TemplateData.readTDFS(new StringReader(dataString));
-		for (Map<String, String> row : data) {
-			SNOMEDCTExpressionTemplateInstantiateVisitor visitor = new SNOMEDCTExpressionTemplateInstantiateVisitor(
-					setUpVisitor.getSlotMap(), row);
-			String res = visitor.visit(tree);
-			
-			System.out.println(res);
-
-		}
-
-		assert (setUpVisitor.getSlotMap().size() == 6);
-		
+		assert(visitor.getSlotMap().size() == 6);
 	}
 
 }
